@@ -1,11 +1,11 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
+  - $$mdi:keyboard-esc$$
+  - Z
+  - Y
+  - U
+  - O
   - T
   - $$mdi:arrow-up-bold$$
   - Y
