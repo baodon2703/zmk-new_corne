@@ -30,11 +30,12 @@
 
 / {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        comma_at: mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_AT";
+            // If either Shift is active (including one-shot), send @; otherwise send comma.
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp COMMA>, <&kp AT>;
         };
     };
 
@@ -68,7 +69,7 @@
             display-name = "ENTHIUM";
             bindings = <
 &kp ESC   &kp Z     &kp Y       &kp U        &kp O       &kp SEMI                               &kp UP                        &kp Q       &kp L    &kp D    &kp P    &kp X    &kp BSPC
-&kp W     &kp C     &kp I       &kp E        &kp A       &kp COMMA              &kp LEFT        &kp ENTER   &kp RIGHT         &kp K       &kp H    &kp T    &kp N    &kp S    &kp SQT
+&kp W     &kp C     &kp I       &kp E        &kp A       &kp COMMA              &kp LEFT        &kp ENTER   &kp RIGHT         &kp K       &kp H    &kp T    &kp N    &kp S    &kp F
 &kp BSPC  &kp SQT   &kp MINUS   &kp FSLH     &kp DOT     &kp AT       &none                     &kp DOWN                      &kp J       &kp M    &kp G    &kp B    &kp V    &kp ENTER
                                 &lt 1 SPACE  &kp SPACE   &lt 2 TAB                                                            &lt 2 ESC   &kp R    &mo 3
             >;
@@ -79,9 +80,9 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&none     &none     &none      &none         &none       &none                                  &mmv MOVE_UP                  &kp KP_MULTIPLY    &kp KP_N7     &kp KP_N8   &kp KP_N9   &none           &none
+&none     &none     &none      &none         &none       &none                                  &mmv MOVE_UP                  &kp KP_MULTIPLY    &kp KP_N7     &kp KP_N8   &kp KP_N9   &kp DLLR        &none
 &none     &none     &none      &kp LPAR      &kp RPAR    &none                  &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &kp KP_PLUS        &kp KP_N4     &kp KP_N5   &kp KP_N6   &kp KP_MINUS    &kp KP_EQUAL
-&none     &none     &none      &none         &none       &none       &none                      &mmv MOVE_DOWN                &kp KP_DIVIDE      &kp KP_N1     &kp KP_N2   &kp KP_N3   &none           &none
+&none     &none     &none      &none         &none       &none       &none                      &mmv MOVE_DOWN                &kp KP_DIVIDE      &kp KP_N1     &kp KP_N2   &kp KP_N3   &kp AMPS        &none
                                &none         &none       &none                                                                &kp KP_COMMA       &kp KP_DOT    &kp KP_N0
             >;
 
@@ -91,10 +92,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&none     &none     &none      &none         &none       &none                                  &mmv MOVE_UP                  &none    &none   &none    &none    &none    &none
-&none     &none     &none      &none         &none       &none                  &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none    &none   &none    &none    &none    &none
-&none     &none     &none      &none         &none       &none       &none                      &mmv MOVE_DOWN                &none    &none   &none    &none    &none    &none
-                               &trans        &trans      &trans                                                               &none    &none   &none
+&none     &kp GRAVE     &kp LT      &kp GT     &kp PIPE    &none                                  &mmv MOVE_UP                  &none    &kp LBRC   &kp RBRC    &none    &none    &none
+&none     &kp EXCL      &kp ASTRK   &kp FSLH   &kp EQUAL   &kp AMPS               &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none    &kp LPAR   &kp RPAR    &none    &none    &none
+&none     &kp TILDE2    &kp PLUS    &kp DLLR   &kp PRCNT   &none       &none                      &mmv MOVE_DOWN                &none    &kp LBKT   &kp RBKT    &none    &none    &none
+                                    &none      &none       &none                                                                &none    &none      &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
