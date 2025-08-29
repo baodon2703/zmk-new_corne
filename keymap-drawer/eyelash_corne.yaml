@@ -6,7 +6,7 @@ layers:
   - Y
   - U
   - O
-  - {t: ;, s: ':'}
+  - {t: ':', s: ;}
   - $$mdi:arrow-up-bold$$
   - Q
   - L
@@ -19,7 +19,7 @@ layers:
   - I
   - E
   - A
-  - {t: ',', s: <}
+  - {t: ',', s: '?'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -32,9 +32,9 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '''', s: '"'}
   - {t: '-', s: _}
-  - {t: /, s: '?'}
-  - {t: ., s: '>'}
-  - '@'
+  - +
+  - {t: ., s: '!'}
+  - {t: '@', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-down-bold$$
   - J
@@ -100,11 +100,11 @@ layers:
   - KP 0
   SYMBOL:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '`', s: '~'}
+  - '~'
   - <
   - '>'
   - '|'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '{'
@@ -128,11 +128,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '~'
+  - {t: '`', s: '~'}
+  - {t: '-', s: _}
   - +
-  - $
   - '%'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - ^
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
