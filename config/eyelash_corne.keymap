@@ -30,13 +30,20 @@
 
 / {
     behaviors {
-        comma_at: mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_AT";
-            // If either Shift is active (including one-shot), send @; otherwise send comma.
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp COMMA>, <&kp AT>;
-        };
+        #define SHIFT_MORPH(NAME, UN, SH)                             \
+            NAME: NAME {                                              \
+                compatible = "zmk,behavior-mod-morph";                \
+                /* 0 binding-cells: used like &NAME with no args */   \
+                #binding-cells = <0>;                                 \
+                /* Trigger on either Shift (works with OSM too) */    \
+                mods = <(MOD_LSFT|MOD_RSFT)>;                         \
+                bindings = <UN>, <SH>;                                \
+            };
+
+        SHIFT_MORPH(at_hash,         &kp AT,      &kp HASH)
+        SHIFT_MORPH(rvs_SEMI,        &kp COLON,   &kp SEMI)
+        SHIFT_MORPH(cma_qns,         &kp COMMA,   &kp QMARK)
+        SHIFT_MORPH(dot_excl,        &kp PERIOD,  &kp EXCL)
     };
 
     rgb_encoder: rgb_encoder {
@@ -60,6 +67,7 @@
             bindings = <&soft_off>;
             key-positions = <0 12>;
         };
+
     };
 
     keymap {
@@ -68,10 +76,10 @@
         default_layer {
             display-name = "ENTHIUM";
             bindings = <
-&kp ESC   &kp Z     &kp Y       &kp U        &kp O       &kp SEMI                               &kp UP                        &kp Q       &kp L    &kp D    &kp P    &kp X    &kp BSPC
-&kp W     &kp C     &kp I       &kp E        &kp A       &kp COMMA              &kp LEFT        &kp ENTER   &kp RIGHT         &kp K       &kp H    &kp T    &kp N    &kp S    &kp F
-&kp BSPC  &kp SQT   &kp MINUS   &kp FSLH     &kp DOT     &kp AT       &none                     &kp DOWN                      &kp J       &kp M    &kp G    &kp B    &kp V    &kp ENTER
-                                &lt 1 SPACE  &kp SPACE   &lt 2 TAB                                                            &lt 2 ESC   &kp R    &mo 3
+&kp ESC   &kp Z     &kp Y       &kp U        &kp O       &rvs_SEMI                         &kp UP                        &kp Q       &kp L    &kp D    &kp P    &kp X    &kp BSPC
+&kp W     &kp C     &kp I       &kp E        &kp A       &cma_qns              &kp LEFT    &kp ENTER   &kp RIGHT         &kp K       &kp H    &kp T    &kp N    &kp S    &kp F
+&kp BSPC  &kp SQT   &kp MINUS   &kp PLUS     &dot_excl   &at_hash       &none              &kp DOWN                      &kp J       &kp M    &kp G    &kp B    &kp V    &kp ENTER
+                                &lt 1 SPACE  &kp SPACE   &lt 2 TAB                                                       &lt 2 ESC   &kp R    &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -92,10 +100,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&none     &kp GRAVE     &kp LT      &kp GT     &kp PIPE    &none                                  &mmv MOVE_UP                  &none    &kp LBRC   &kp RBRC    &none    &none    &none
-&none     &kp EXCL      &kp ASTRK   &kp FSLH   &kp EQUAL   &kp AMPS               &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none    &kp LPAR   &kp RPAR    &none    &none    &none
-&none     &kp TILDE2    &kp PLUS    &kp DLLR   &kp PRCNT   &none       &none                      &mmv MOVE_DOWN                &none    &kp LBKT   &kp RBKT    &none    &none    &none
-                                    &none      &none       &none                                                                &none    &none      &none
+&none     &kp TILDE2   &kp LT      &kp GT     &kp PIPE    &kp DLLR                               &mmv MOVE_UP                  &none   &kp LBRC   &kp RBRC    &none    &none    &none
+&none     &kp EXCL     &kp ASTRK   &kp FSLH   &kp EQUAL   &kp AMPS               &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none   &kp LPAR   &kp RPAR    &none    &none    &none
+&none     &kp GRAVE    &kp MINUS   &kp PLUS   &kp PRCNT   &kp CARET       &none                  &mmv MOVE_DOWN                &none   &kp LBKT   &kp RBKT    &none    &none    &none
+                                    &none      &none       &none                                                               &none   &none      &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -104,9 +112,9 @@
         layer_3 {
             display-name = "NAV";
             bindings = <
-&none     &none         &none         &none      &none         &none                                  &mmv MOVE_UP                  &none    &none     &kp UP      &none       &none    &none
-&none     &none         &none         &none      &none         &none                  &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none    &kp LEFT  &kp DOWN    &kp RIGHT   &none    &none
-&none     &kp LCTRL     &kp LALT      &kp LGUI   &kp LSHIFT    &none       &none                      &mmv MOVE_DOWN                &none    &none     &none       &none       &none    &none
+&none     &none         &none         &none      &none         &none                               &mmv MOVE_UP                  &none    &none     &kp UP      &none       &none    &none
+&none     &none         &none         &none      &none         &none               &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none    &kp LEFT  &kp DOWN    &kp RIGHT   &none    &none
+&none     &kp LCTRL     &kp LALT      &kp LGUI   &kp LSHIFT    &none       &none                   &mmv MOVE_DOWN                &none    &none     &none       &none       &none    &none
                                       &trans     &trans        &trans                                                               &none    &none     &none
             >;
 
