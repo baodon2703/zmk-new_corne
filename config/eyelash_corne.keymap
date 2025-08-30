@@ -92,9 +92,9 @@ MAKE_HRM(hml_dot_colon, &kp, &dot_colon, KEYS_R THUMBS)
 #define LSF_DT_CLN &hml_dot_colon LSHFT
 
 // Custom HRM: Mod: GUI | Tap: QNS | Shifted: EXCL
-// ZMK_MOD_MORPH(qns_excl, bindings = <&kp QMARK>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>;)
-// MAKE_HRM(hml_qns_excl, &kp, &qns_excl, KEYS_R THUMBS)
-// #define LGUI_QN_EX &hml_qns_excl LGUI
+ZMK_MOD_MORPH(qns_excl, bindings = <&kp QUESTION>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>;)
+MAKE_HRM(hml_qns_excl, &kp, &qns_excl, KEYS_R THUMBS)
+#define LGUI_QN_EX &hml_qns_excl LGUI
 
 // ZMK_MOD_MORPH(cma_smcln, bindings = <&kp COMMA>, <&kp SEMI>; mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ZMK_MOD_MORPH(at_hash, bindings = <&kp AT>, <&kp HASH>; mods = <(MOD_LSFT|MOD_RSFT)>;)
