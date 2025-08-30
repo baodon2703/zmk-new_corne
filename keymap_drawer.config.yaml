@@ -143,6 +143,14 @@ parse_config:
       tap: '?'
       shifted: '!'
       hold: 'GUI'
+    "&hml LCTRL SQT":
+      tap: '''
+      shifted: '"'
+      hold: 'Ctrl'
+    "&hml LALT MINUS":
+      tap: '-'
+      shifted: '_'
+      hold: 'Alt'
     "&hm LEFT_GUI A":
       tap: 'A'
       shifted: $$mdi:apple-keyboard-command$$
