@@ -33,7 +33,7 @@ layers:
   - {t: '''', s: '"'}
   - {t: '-', s: _}
   - +
-  - '&lsf_dt_cln LSHFT'
+  - '&lsf_dt_cln'
   - {t: '@', s: '#'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
