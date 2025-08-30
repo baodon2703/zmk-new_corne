@@ -135,6 +135,9 @@ parse_config:
       tap: $$mdi:backspace-reverse-outline$$
       hold: $$mdi:navigation-variant$$
     # Home rows
+    "&hml_dot_colon LSHFT":
+      tap: '.'
+      shifted: ':'
     "&hm LEFT_GUI A":
       tap: 'A'
       shifted: $$mdi:apple-keyboard-command$$
