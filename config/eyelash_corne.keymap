@@ -87,14 +87,24 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 /* Custom Keys */
 
 // Custom HRM: Mod: Shift | Tap: DOT | Shifted: Colon
-ZMK_MOD_MORPH(dot_colon, bindings = <&kp PERIOD>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>;)
-MAKE_HRM(hml_dot_colon, &kp, &dot_colon, KEYS_R THUMBS)
-#define LSF_DT_CLN &hml_dot_colon LSHFT
+// ZMK_MOD_MORPH(dot_colon, bindings = <&kp PERIOD>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>;)
+// MAKE_HRM(hml_dot_colon, &kp, &dot_colon, KEYS_R THUMBS)
+// #define LSF_DT_CLN &hml_dot_colon LSHFT
+
+ZMK_MOD_MORPH(ls_dt_cln,
+    bindings = <&hml LSHFT PERIOD>, <&kp COLON>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
 // Custom HRM: Mod: GUI | Tap: QNS | Shifted: EXCL
-ZMK_MOD_MORPH(qns_excl, bindings = <&kp QUESTION>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>;)
-MAKE_HRM(hml_qns_excl, &kp, &qns_excl, KEYS_R THUMBS)
-#define LGUI_QN_EX &hml_qns_excl LGUI
+// ZMK_MOD_MORPH(qns_excl, bindings = <&kp QUESTION>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>;)
+// MAKE_HRM(hml_qns_excl, &kp, &qns_excl, KEYS_R THUMBS)
+// #define LGUI_QN_EX &hml_qns_excl LGUI
+
+ZMK_MOD_MORPH(lgui_qns_excl,
+    bindings = <&hml LGUI QMARK>, <&kp COEXCLLON>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
 // ZMK_MOD_MORPH(cma_smcln, bindings = <&kp COMMA>, <&kp SEMI>; mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ZMK_MOD_MORPH(at_hash, bindings = <&kp AT>, <&kp HASH>; mods = <(MOD_LSFT|MOD_RSFT)>;)
@@ -138,7 +148,7 @@ MAKE_HRM(hml_qns_excl, &kp, &qns_excl, KEYS_R THUMBS)
 //├─────────────┼───────────────┼───────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp W         &kp C              &kp I         &kp E         &kp A        &none      &kp LEFT      &kp ENTER      &kp RIGHT      &kp K         &kp H         &kp T         &kp N         &kp S         &kp F
 //├─────────────┼───────────────┼───────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp BSPC     &hml LCTRL SQT &hml LALT MINUS   &kp SPACE    LSF_DT_CLN     &none           ___         &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
+     &kp BSPC     &hml LCTRL SQT &hml LALT MINUS lgui_qns_excl   ls_dt_cln     &none           ___         &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
 //╰─────────────┴───────────────┴───────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                   &lt 1 SPACE    &kp SPACE     &lt 2 TAB                                                   &lt 2 ESC     &kp R         &mo 3
 //                                              ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
