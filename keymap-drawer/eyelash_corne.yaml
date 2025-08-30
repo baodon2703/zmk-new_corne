@@ -19,7 +19,7 @@ layers:
   - I
   - E
   - A
-  - '&cma_smcln'
+  - {t: ',', s: ;}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -30,11 +30,11 @@ layers:
   - S
   - F
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '''', s: '"'}
-  - {t: '-', s: _}
+  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
+  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
   - {t: '?', h: GUI, s: '!'}
   - {t: ., h: Shift, s: ':'}
-  - '&at_hash'
+  - {t: '@', s: '#'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
   - J
