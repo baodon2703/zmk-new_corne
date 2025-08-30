@@ -197,5 +197,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
 combos:
-- p: [0, 12]
+- p: [44, 45]
   k: '&soft_off'
