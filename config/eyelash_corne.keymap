@@ -86,7 +86,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 /* Custom Keys */
 ZMK_MOD_MORPH(dot_colon, bindings = <&kp PERIOD>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>;)
-MAKE_HRM(lsf_dt_cln, MOD_LSFT, &dot_colon, KEYS_R THUMBS)
+MAKE_HRM(lsf_dt_cln, (MOD_LSFT), &dot_colon, KEYS_R THUMBS)
 
 / {
     behaviors {
