@@ -32,7 +32,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '''', h: Ctrl, s: '"'}
   - {t: '-', h: Alt, s: _}
-  - {t: '?', h: LGUI, s: COEXCLLON}
+  - {t: '?', h: LGUI, s: '!'}
   - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
