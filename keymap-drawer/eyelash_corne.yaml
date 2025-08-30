@@ -30,10 +30,10 @@ layers:
   - S
   - F
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '''', s: '"'}
-  - {t: '-', s: _}
-  - +
-  - {t: ., s: ':'}
+  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
+  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
+  - {t: '?', h: GUI, s: '!'}
+  - {t: ., h: Shift, s: ':'}
   - {t: '@', s: '#'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
