@@ -85,8 +85,8 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 &soft_off { hold-time-ms = <2000>; };
 
 /* Custom Keys */
-ZMK_MOD_MORPH(dot_excl, bindings = <&kp PERIOD>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>;)
-MAKE_HRM(hml_dot_excl, &kp, &dot_excl, KEYS_R THUMBS)
+ZMK_MOD_MORPH(dot_colon, bindings = <&kp PERIOD>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>;)
+MAKE_HRM(lsf_dt_cln, &kp LSHFT, &dot_colon, KEYS_R THUMBS)
 
 / {
     behaviors {
@@ -133,7 +133,7 @@ MAKE_HRM(hml_dot_excl, &kp, &dot_excl, KEYS_R THUMBS)
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp W         &kp C         &kp I         &kp E         &kp A         &cma_qns        &kp LEFT      &kp ENTER      &kp RIGHT      &kp K         &kp H         &kp T         &kp N         &kp S         &kp F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp BSPC      &kp SQT       &kp MINUS     &kp PLUS      &dot_excl     &at_hash           ___        &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
+     &kp BSPC      &kp SQT       &kp MINUS     &kp PLUS     &lsf_dt_cln    &at_hash           ___        &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &lt 1 SPACE    &kp SPACE     &lt 2 TAB                                                   &lt 2 ESC     &kp R         &mo 3
 //                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
