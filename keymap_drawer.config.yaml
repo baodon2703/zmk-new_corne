@@ -144,7 +144,7 @@ parse_config:
       shifted: '!'
       hold: 'GUI'
     "&hml LCTRL SQT":
-      tap: '''
+      tap: "'"
       shifted: '"'
       hold: 'Ctrl'
     "&hml LALT MINUS":
