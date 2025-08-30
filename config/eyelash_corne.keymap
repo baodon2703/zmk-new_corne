@@ -76,10 +76,15 @@
         default_layer {
             display-name = "ENTHIUM";
             bindings = <
-&kp ESC   &kp Z     &kp Y       &kp U        &kp O       &rvs_SEMI                         &kp UP                        &kp Q       &kp L    &kp D    &kp P    &kp X    &kp BSPC
-&kp W     &kp C     &kp I       &kp E        &kp A       &cma_qns              &kp LEFT    &kp ENTER   &kp RIGHT         &kp K       &kp H    &kp T    &kp N    &kp S    &kp F
-&kp BSPC  &kp SQT   &kp MINUS   &kp PLUS     &dot_excl   &at_hash       &none              &kp DOWN                      &kp J       &kp M    &kp G    &kp B    &kp V    &kp ENTER
-                                &lt 1 SPACE  &kp SPACE   &lt 2 TAB                                                       &lt 2 ESC   &kp R    &mo 3
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp ESC       &kp Z         &kp Y         &kp U         &kp O         &rvs_SEMI                     &kp UP                        &kp Q         &kp L         &kp D         &kp P         &kp X         &kp BSPC
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp W         &kp C         &kp I         &kp E         &kp A         &cma_qns        &kp LEFT      &kp ENTER      &kp RIGHT      &kp K         &kp H         &kp T         &kp N         &kp S         &kp F
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp BSPC      &kp SQT       &kp MINUS     &kp PLUS      &dot_excl     &at_hash        &none         &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
+//╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                              &lt 1 SPACE    &kp SPACE     &lt 2 TAB                                                   &lt 2 ESC     &kp R         &mo 3
+//                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -88,10 +93,15 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&none     &none     &none      &none         &none       &none                                  &mmv MOVE_UP                  &kp KP_MULTIPLY    &kp KP_N7     &kp KP_N8   &kp KP_N9   &kp DLLR        &none
-&none     &none     &none      &kp LPAR      &kp RPAR    &none                  &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &kp KP_PLUS        &kp KP_N4     &kp KP_N5   &kp KP_N6   &kp KP_MINUS    &kp KP_EQUAL
-&none     &none     &none      &none         &none       &none       &none                      &mmv MOVE_DOWN                &kp KP_DIVIDE      &kp KP_N1     &kp KP_N2   &kp KP_N3   &kp AMPS        &none
-                               &none         &none       &none                                                                &kp KP_COMMA       &kp KP_DOT    &kp KP_N0
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &none         &none         &none         &none         &none         &none                        &mmv MOVE_UP                &kp KP_MULTIPLY  &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp DLLR      &none
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &none         &none         &kp LPAR      &kp RPAR      &none        &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &kp KP_PLUS    &kp KP_N4     &kp KP_N5     &kp KP_N6   &kp KP_MINUS  &kp KP_EQUAL
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &none         &none         &none         &none         &none           &none       &mmv MOVE_DOWN                &kp KP_DIVIDE   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp AMPS      &none
+//╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &none         &none         &none                                                     &kp KP_COMMA    &kp KP_DOT    &kp KP_N0
+//                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -100,10 +110,15 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&none     &kp TILDE2   &kp LT      &kp GT     &kp PIPE    &kp DLLR                               &mmv MOVE_UP                  &none   &kp LBRC   &kp RBRC    &none    &none    &none
-&none     &kp EXCL     &kp ASTRK   &kp FSLH   &kp EQUAL   &kp AMPS               &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none   &kp LPAR   &kp RPAR    &none    &none    &none
-&none     &kp GRAVE    &kp MINUS   &kp PLUS   &kp PRCNT   &kp CARET       &none                  &mmv MOVE_DOWN                &none   &kp LBKT   &kp RBKT    &none    &none    &none
-                                    &none      &none       &none                                                               &none   &none      &none
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &none         &kp TILDE2    &kp LT        &kp GT        &kp PIPE      &kp DLLR                     &mmv MOVE_UP                   &none         &kp LBRC      &kp RBRC      &none         &none         &none
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &kp EXCL      &kp ASTRK.    &kp FSLH      &kp EQUAL     &kp AMPS     &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT    &none         &kp LPAR      &kp RPAR      &none         &none         &none
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &kp GRAVE     &kp MINUS     &kp PLUS      &kp PRCNT     &kp CARET       &none       &mmv MOVE_DOWN                  &none         &kp LBKT      &kp RBKT      &none         &none         &none
+//╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &none         &none         &none                                                       &none         &none         &none
+//                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -112,10 +127,15 @@
         layer_3 {
             display-name = "NAV";
             bindings = <
-&none     &none         &none         &none      &none         &none                               &mmv MOVE_UP                  &none    &none     &kp UP      &none       &none    &none
-&none     &none         &none         &none      &none         &none               &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none    &kp LEFT  &kp DOWN    &kp RIGHT   &none    &none
-&none     &kp LCTRL     &kp LALT      &kp LGUI   &kp LSHIFT    &none       &none                   &mmv MOVE_DOWN                &none    &none     &none       &none       &none    &none
-                                      &none      &none         &none                                                             &none    &none     &none
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &none         &none         &none         &none         &none         &none                        &mmv MOVE_UP                   &none         &none         &kp UP        &none         &none          &none
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &none         &none         &none         &none         &none        &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT    &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none          &none
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHIFT    &none           &none       &mmv MOVE_DOWN                  &none         &none         &none         &none         &none          &none
+//╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &none         &none         &none                                                       &none         &none         &none
+//                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
 
             sensor-bindings = <&scroll_encoder>;
