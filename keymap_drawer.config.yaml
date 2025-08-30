@@ -138,6 +138,11 @@ parse_config:
     "&hml_dot_colon LSHFT":
       tap: '.'
       shifted: ':'
+      hold: 'Shift'
+    "&hml_qns_excl LGUI":
+      tap: '?'
+      shifted: '!'
+      hold: 'GUI'
     "&hm LEFT_GUI A":
       tap: 'A'
       shifted: $$mdi:apple-keyboard-command$$
