@@ -32,7 +32,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '''', h: Ctrl, s: '"'}
   - {t: '-', h: Alt, s: _}
-  - {t: '?', h: GUI, s: '!'}
+  - $$mdi:keyboard-space$$
   - {t: ., h: Shift, s: ':'}
   - {t: '@', s: '#'}
   - {t: '$$mdi:transfer$$', type: trans}
