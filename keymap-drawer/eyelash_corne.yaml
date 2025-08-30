@@ -6,7 +6,7 @@ layers:
   - Y
   - U
   - O
-  - {t: ':', s: ;}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
   - Q
   - L
@@ -19,7 +19,7 @@ layers:
   - I
   - E
   - A
-  - {t: ',', s: '?'}
+  - '&cma_smcln'
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -30,11 +30,11 @@ layers:
   - S
   - F
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
-  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
+  - {t: '''', s: '"'}
+  - {t: '-', s: _}
   - {t: '?', h: GUI, s: '!'}
   - {t: ., h: Shift, s: ':'}
-  - {t: '@', s: '#'}
+  - '&at_hash'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
   - J
