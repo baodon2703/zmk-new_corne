@@ -85,12 +85,11 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 &soft_off { hold-time-ms = <2000>; };
 
 /* Custom Keys */
+#define MAKE_MOD_MORPH(NAME, MODS, BINDING, MODDED_BINDING)                                         \
+  ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <MODDED_BINDING>; mods = <MODS>;)
+
 // MAKE_HRM(hml_dot_excl, &kp, &kp, KEYS_R THUMBS)
-ZMK_MOD_MORPH(dot_excl,
-    (MOD_LSFT|MOD_RSFT),   // mods that trigger the shifted binding
-    &kp PERIOD,            // unshifted binding
-    &kp EXCL               // shifted binding
-);
+MAKE_MOD_MORPH(dot_excl, (MOD_LSFT|MOD_RSFT), &kp PERIOD, &kp EXCL);
 
 / {
     behaviors {
