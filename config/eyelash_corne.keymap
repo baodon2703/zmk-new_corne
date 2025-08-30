@@ -52,14 +52,6 @@
         bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
     };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <100>;
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -103,8 +95,6 @@
                                                &none         &none         &none                                                     &kp KP_COMMA    &kp KP_DOT    &kp KP_N0
 //                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
@@ -113,15 +103,13 @@
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &none         &kp TILDE2    &kp LT        &kp GT        &kp PIPE      &kp DLLR                     &mmv MOVE_UP                   &none         &kp LBRC      &kp RBRC      &none         &none         &none
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &kp EXCL      &kp ASTRK.    &kp FSLH      &kp EQUAL     &kp AMPS     &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT    &none         &kp LPAR      &kp RPAR      &none         &none         &none
+     &none         &kp EXCL      &kp ASTRK    &kp FSLH      &kp EQUAL     &kp AMPS       &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &none         &kp LPAR      &kp RPAR      &none         &none         &none
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp GRAVE     &kp MINUS     &kp PLUS      &kp PRCNT     &kp CARET       &none       &mmv MOVE_DOWN                  &none         &kp LBKT      &kp RBKT      &none         &none         &none
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &none         &none         &none                                                       &none         &none         &none
 //                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {
@@ -137,8 +125,6 @@
                                                &none         &none         &none                                                       &none         &none         &none
 //                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
