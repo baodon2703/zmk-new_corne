@@ -32,8 +32,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '''', h: Ctrl, s: '"'}
   - {t: '-', h: Alt, s: _}
-  - $$mdi:keyboard-space$$
-  - {t: ., h: Shift, s: ':'}
+  - {t: '?', h: LGUI, s: COEXCLLON}
+  - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
