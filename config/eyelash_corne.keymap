@@ -60,7 +60,11 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
-// Default Code For Mouse
+// HRM Helpers
+#define MAKE_HRM_KEYS(NAME, MODS, BINDING)                                         \
+  ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
+
+/* Default Code For Mouse */
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
@@ -80,6 +84,14 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 // Soft Off
 &soft_off { hold-time-ms = <2000>; };
 
+/* Custom Keys */
+// MAKE_HRM(hml_dot_excl, &kp, &kp, KEYS_R THUMBS)
+ZMK_MOD_MORPH(dot_excl,
+    (MOD_LSFT|MOD_RSFT),   // mods that trigger the shifted binding
+    &kp PERIOD,            // unshifted binding
+    &kp EXCL               // shifted binding
+);
+
 / {
     behaviors {
         #define SHIFT_MORPH(NAME, UN, SH)                             \
@@ -95,7 +107,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
         SHIFT_MORPH(at_hash,         &kp AT,      &kp HASH)
         SHIFT_MORPH(rvs_SEMI,        &kp COLON,   &kp SEMI)
         SHIFT_MORPH(cma_qns,         &kp COMMA,   &kp QMARK)
-        SHIFT_MORPH(dot_excl,        &kp PERIOD,  &kp EXCL)
+        // SHIFT_MORPH(dot_excl,        &kp PERIOD,  &kp EXCL)
     };
 
     rgb_encoder: rgb_encoder {
