@@ -165,6 +165,12 @@ parse_config:
       tap: 'L'
       shifted: $$mdi:apple-keyboard-option$$
     # self behaviors
+    "&cma_smcln":
+      tap: ','
+      shifted: ';'
+    "&at_hash":
+      tap: '@'
+      shifted: '#'
     "&hm LG(LS(V)) P":
       tap: 'P'
       shifted: $$mdi:content-copy$$

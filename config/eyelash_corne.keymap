@@ -85,15 +85,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 &soft_off { hold-time-ms = <2000>; };
 
 /* Custom Keys */
-#define SHIFT_MORPH(NAME, UN, SH)                             \
-    NAME: NAME {                                              \
-        compatible = "zmk,behavior-mod-morph";                \
-        /* 0 binding-cells: used like &NAME with no args */   \
-        #binding-cells = <0>;                                 \
-        /* Trigger on either Shift (works with OSM too) */    \
-        mods = <(MOD_LSFT|MOD_RSFT)>;                         \
-        bindings = <UN>, <SH>;                                \
-    };
 
 // Custom HRM: Mod: Shift | Tap: DOT | Shifted: Colon
 ZMK_MOD_MORPH(dot_colon, bindings = <&kp PERIOD>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>;)
@@ -105,8 +96,8 @@ ZMK_MOD_MORPH(qns_excl, bindings = <&kp QMARK>, <&kp EXCL>; mods = <(MOD_LSFT|MO
 MAKE_HRM(hml_qns_excl, &kp, &qns_excl, KEYS_R THUMBS)
 #define LGUI_QN_EX &hml_qns_excl LGUI
 
-SHIFT_MORPH(cma_smcln,    &kp COMMA,   &kp SEMI)
-SHIFT_MORPH(at_hash,      &kp AT,      &kp HASH)
+ZMK_MOD_MORPH(cma_smcln, bindings = <&kp COMMA>, <&kp SEMI>; mods = <(MOD_LSFT|MOD_RSFT)>;)
+ZMK_MOD_MORPH(at_hash, bindings = <&kp AT>, <&kp HASH>; mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 
 
@@ -147,7 +138,7 @@ SHIFT_MORPH(at_hash,      &kp AT,      &kp HASH)
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp W         &kp C         &kp I         &kp E         &kp A         &cma_smcln      &kp LEFT      &kp ENTER      &kp RIGHT      &kp K         &kp H         &kp T         &kp N         &kp S         &kp F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp BSPC      &kp SQT       &kp MINUS     LGUI_QN_EX    LSF_DT_CLN    &at_hash           ___        &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
+     &kp BSPC  &hml LCTRL SQT &hml LALT MINUS     LGUI_QN_EX    LSF_DT_CLN    &at_hash           ___        &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &lt 1 SPACE    &kp SPACE     &lt 2 TAB                                                   &lt 2 ESC     &kp R         &mo 3
 //                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
