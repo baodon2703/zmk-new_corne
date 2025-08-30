@@ -102,7 +102,7 @@ ZMK_MOD_MORPH(ls_dt_cln,
 // #define LGUI_QN_EX &hml_qns_excl LGUI
 
 ZMK_MOD_MORPH(lgui_qns_excl,
-    bindings = <&hml LGUI QMARK>, <&kp COEXCLLON>;
+    bindings = <&hml LGUI QMARK>, <&kp EXCL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
