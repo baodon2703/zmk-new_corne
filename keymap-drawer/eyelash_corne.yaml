@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   - {t: '&shift_repeat', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - R
-  - {t: '&nav_word 3 0', h: NAV}
+  - {t: '&nav_dance', h: NAV}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
