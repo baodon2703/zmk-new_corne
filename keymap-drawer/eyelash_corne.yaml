@@ -278,3 +278,6 @@ combos:
 - p: [13, 28]
   k: '&ss_mc_zone'
   l: [ENTHIUM]
+- p: [25, 26]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [ENTHIUM]
