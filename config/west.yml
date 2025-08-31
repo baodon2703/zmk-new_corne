@@ -4,6 +4,11 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: gpeye                        
+      url-base: https://github.com/GPeye 
+    - name: kevinpastor
+      url-base: https://github.com/kevinpastor
+
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -32,6 +37,14 @@ manifest:
     - name: zmk-unicode
       remote: urob
       revision: main
-
+    
+    # Custom Nice!View
+    - name: hammerbeam-slideshow          
+      remote: gpeye                       
+      revision: main                
+    - name: nice-view-elemental
+      remote: kevinpastor
+      revision: main
+      
   self:
     path: config
