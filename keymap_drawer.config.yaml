@@ -182,6 +182,10 @@ parse_config:
     "&hm LG(LS(V)) P":
       tap: 'P'
       shifted: $$mdi:content-copy$$
+    "&cp_pst_cut_mv":
+      tap: 'Super Copy'
+    "&undo_redo":
+      tap: 'Undo Redo'
     # Mouse
     "&msc SCRL_UP":
       tap: $$mdi:pan-up$$
