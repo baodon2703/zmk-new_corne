@@ -149,6 +149,11 @@ ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
 ZMK_HOLD_TAP(smart_nav, bindings = <&mo>, <&nav_word>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
+// Tap: sticky SYM  | Hold: SYM-layer.
+#define SMART_SYM &smart_sym SYM SYM
+ZMK_HOLD_TAP(smart_sym, bindings = <&mo>, <&sl>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
 // Tap: backspace | Lshft + tap: delete | Rshft + tap: shift-delete.
 ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
               mods = <(MOD_LSFT|MOD_RSFT)>; keep-mods = <MOD_RSFT>;)
@@ -194,7 +199,7 @@ ZMK_COMBO(cb_to_func, &to FUNC, RT5 RM5 RB5, DEFAULT)
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &bs_del    &hml LCTRL SQT &hml LALT MINUS  &lgui_qns_excl   &ls_dt_cln     &at_hash           XXX      &kp C_VOL_DN                     &kp J     &hmr RSHFT M   &hmr RGUI G   &hmr RALT B   &hmr RCTRL V   &kp ENTER
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                    SMART_NUM     &kp SPACE     &lt 2 TAB                                                  MAGIC_SHIFT      &kp R       SMART_NAV
+                                                    SMART_NUM     &kp SPACE     SMART_NAV                                                  MAGIC_SHIFT      &kp R       SMART_SYM
 //                                              ╰──────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
         };
