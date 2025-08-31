@@ -149,11 +149,11 @@ ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
               tapping-term-ms = <200>;)
 
 // Tap: nav-word  | Hold: num-layer.
-#define SMART_NAV &smart_nav NAV 0
-ZMK_HOLD_TAP(smart_nav, bindings = <&mo>, <&nav_dance>; flavor = "balanced";
+#define SMART_NAV &smart_nav NAV NAV 0
+ZMK_HOLD_TAP(smart_nav, bindings = <&mo>, <&nav_word>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(nav_dance, bindings = <&nav_word NAV>, <&sl NAV>;
-              tapping-term-ms = <200>;)
+// ZMK_TAP_DANCE(nav_dance, bindings = <&nav_word NAV>, <&sl NAV>;
+//               tapping-term-ms = <200>;)
 
 / {
     behaviors {
