@@ -230,27 +230,30 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
 /*  ---------------  */
 
 // Turn off the device
-ZMK_COMBO(cb_soft_off,   &soft_off, 44 45,      ALL) 
+ZMK_COMBO(cb_soft_off,   &soft_off,    44 45,      ALL) 
 // Activate FUNC layer
-ZMK_COMBO(cb_to_func,    &to FUNC,  12 27 41,   DEFAULT) 
+ZMK_COMBO(cb_to_func,    &to FUNC,     12 27 41,   DEFAULT) 
 // Tab 
-ZMK_COMBO(cb_tab,        &kp TAB,   16 17,      DEFAULT) 
+ZMK_COMBO(cb_tab,        &kp TAB,      16 17,      DEFAULT) 
 // Left Para (
-ZMK_COMBO(cb_lpar,       &kp LPAR,  23 24,      DEFAULT NUM) 
+ZMK_COMBO(cb_lpar,       &kp LPAR,     23 24,      DEFAULT NUM) 
 // Right Para )
-ZMK_COMBO(cb_rpar,       &kp RPAR,  24 25,      DEFAULT NUM) 
+ZMK_COMBO(cb_rpar,       &kp RPAR,     24 25,      DEFAULT NUM) 
 // Left Brace {
-ZMK_COMBO(cb_lbrc,       &kp LBRC,  8 9,        DEFAULT) 
+ZMK_COMBO(cb_lbrc,       &kp LBRC,     8 9,        DEFAULT) 
 // Right Brace {
-ZMK_COMBO(cb_rbrc,       &kp RBRC,  9 10,       DEFAULT) 
+ZMK_COMBO(cb_rbrc,       &kp RBRC,     9 10,       DEFAULT) 
 // Left Bracket [
-ZMK_COMBO(cb_lbkt,       &kp LBKT,  37 38,      DEFAULT) 
+ZMK_COMBO(cb_lbkt,       &kp LBKT,     37 38,      DEFAULT) 
 // Right Bracket ]
-ZMK_COMBO(cb_rbkt,       &kp RBKT,  38 39,      DEFAULT) 
+ZMK_COMBO(cb_rbkt,       &kp RBKT,     38 39,      DEFAULT) 
 
 // Screenshots
-ZMK_COMBO(cb_ss,         &ss_zone,    14 29,    DEFAULT) 
-ZMK_COMBO(cb_ss_mac,     &ss_mc_zone, 13 28,    DEFAULT) 
+ZMK_COMBO(cb_ss,         &ss_zone,     14 29,      DEFAULT) 
+ZMK_COMBO(cb_ss_mac,     &ss_mc_zone,  13 28,      DEFAULT) 
+
+// Enter
+ZMK_COMBO(cb_enter,      &kp ENTER,    25 26,      DEFAULT) 
 
 
 / {
