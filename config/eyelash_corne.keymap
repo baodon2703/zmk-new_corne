@@ -61,8 +61,9 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
 // HRM Helpers
-#define MAKE_HRM_KEYS(NAME, MODS, BINDING)                                         \
-  ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)                            \
+  ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
+                bindings = <BINDING1>, <BINDING2>;)
 
 /* Default Code For Mouse */
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -87,25 +88,18 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 /* Custom Keys */
 
 // Custom HRM: Mod: Shift | Tap: DOT | Shifted: Colon
-// ZMK_MOD_MORPH(dot_colon, bindings = <&kp PERIOD>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>;)
-// MAKE_HRM(hml_dot_colon, &kp, &dot_colon, KEYS_R THUMBS)
-// #define LSF_DT_CLN &hml_dot_colon LSHFT
-
 ZMK_MOD_MORPH(ls_dt_cln,
     bindings = <&hml LSHFT PERIOD>, <&kp COLON>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // Custom HRM: Mod: GUI | Tap: QNS | Shifted: EXCL
-// ZMK_MOD_MORPH(qns_excl, bindings = <&kp QUESTION>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>;)
-// MAKE_HRM(hml_qns_excl, &kp, &qns_excl, KEYS_R THUMBS)
-// #define LGUI_QN_EX &hml_qns_excl LGUI
-
 ZMK_MOD_MORPH(lgui_qns_excl,
     bindings = <&hml LGUI QMARK>, <&kp EXCL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+SIMPLE_MORPH(cma_smcln, SFT, &kp COMMA, &kp SEMICOLON)
 // ZMK_MOD_MORPH(cma_smcln, bindings = <&kp COMMA>, <&kp SEMI>; mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ZMK_MOD_MORPH(at_hash, bindings = <&kp AT>, <&kp HASH>; mods = <(MOD_LSFT|MOD_RSFT)>;)
 
@@ -146,7 +140,7 @@ ZMK_MOD_MORPH(lgui_qns_excl,
 //╭─────────────┬───────────────┬───────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp ESC       &kp Z              &kp Y         &kp U         &kp O        &none                         &kp UP                        &kp Q         &kp L         &kp D         &kp P         &kp X         &kp BSPC
 //├─────────────┼───────────────┼───────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp W         &kp C              &kp I         &kp E         &kp A        &none      &kp LEFT      &kp ENTER      &kp RIGHT      &kp K         &kp H         &kp T         &kp N         &kp S         &kp F
+     &kp W         &kp C              &kp I         &kp E         &kp A        &cma_smcln      &kp LEFT      &kp ENTER      &kp RIGHT      &kp K         &kp H         &kp T         &kp N         &kp S         &kp F
 //├─────────────┼───────────────┼───────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp BSPC     &hml LCTRL SQT &hml LALT MINUS &lgui_qns_excl  &ls_dt_cln     &none           ___         &kp DOWN                      &kp J         &kp M         &kp G         &kp B         &kp V         &kp ENTER
 //╰─────────────┴───────────────┴───────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
