@@ -43,7 +43,7 @@ layers:
   - {t: B, h: '$$mdi:apple-keyboard-option$$'}
   - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '&num_dance', h: NUMBER}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   - {t: '&shift_repeat', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
