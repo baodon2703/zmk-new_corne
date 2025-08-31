@@ -6,14 +6,14 @@ layers:
   - Y
   - U
   - O
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&cp_pst_cut_mv'
   - $$mdi:volume-high$$
   - Q
   - L
   - D
   - P
   - X
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - '&undo_redo'
   - W
   - C
   - I
