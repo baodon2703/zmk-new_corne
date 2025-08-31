@@ -167,9 +167,26 @@ ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
 /*  --------------  */
 &soft_off { hold-time-ms = <2000>; };
 
-ZMK_MACRO(next_desk, bindings = <&kp LCTRL &kp RIGHT>;)
-ZMK_MACRO(prev_desk, bindings = <&kp LCTRL &kp LEFT>;)
+ZMK_MACRO(next_desk, bindings = <&kp LC(RIGHT) >;)
+ZMK_MACRO(prev_desk, bindings = <&kp LC(LEFT)>;)
 
+// Tap: Undo | Double-tap: Redo
+ZMK_TAP_DANCE(undo_redo, bindings = <&kp LG(Z)>, <&kp LG(LS(Z))>;
+              tapping-term-ms = <200>;)
+
+// Tap: Copy | Double Tab: Paste | Ctrl: Cut | Alt: Mac Paste Cut file
+ZMK_TAP_DANCE(cp_pst,
+    &kp LG(C),   /* single tap  */
+    &kp LG(V)    /* double tap  */
+);
+ZMK_MOD_MORPH(cp_pst_cut,
+    bindings = <&copy_paste_td>, <&kp LG(X)>; /* Ctrl Override */
+    mods = <(MOD_LCTL|MOD_RCTL)>; 
+)
+ZMK_MOD_MORPH(cp_pst_cut_mv,
+    bindings = <&copy_paste_cCut>, <&kp LG(LA(V))>;
+    mods = <(MOD_LCTL|MOD_RCTL)>;
+)
 
 /*  ---------------  */
 /*       Combos      */
@@ -197,7 +214,7 @@ ZMK_COMBO(cb_to_func, &to FUNC, RT5 RM5 RB5, DEFAULT)
             display-name = "ENTHIUM";
             bindings = <
 //╭─────────────┬───────────────┬───────────────┬──────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp ESC         &kp Z           &kp Y          &kp U          &kp O          XXX                       &kp C_VOL_UP                     &kp Q         &kp L         &kp D         &kp P         &kp X        &bs_del
+      &kp ESC         &kp Z           &kp Y          &kp U          &kp O     &cp_pst_cut_mv                 &kp C_VOL_UP                     &kp Q         &kp L         &kp D         &kp P         &kp X       &undo_redo
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp W           &kp C           &kp I          &kp E          &kp A       &cma_smcln      &kp C_PREV     &kp C_PP     &kp C_NEXT        &kp K         &kp H         &kp T         &kp N         &kp S         &kp F
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
