@@ -194,6 +194,21 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
 ZMK_COMBO(cb_soft_off, &soft_off, LH0 RH0, ALL) 
 // Activate FUNC layer
 ZMK_COMBO(cb_to_func, &to FUNC, RT5 RM5 RB5, DEFAULT) 
+// Tab 
+ZMK_COMBO(cb_tab, &kp TAB, LM2 LM1, DEFAULT) 
+// Left Para (
+ZMK_COMBO(cb_lpar, &kp LPAR, RM1 RM2, DEFAULT NUM) 
+// Right Para )
+ZMK_COMBO(cb_rpar, &kp RPAR, RM2 RM3, DEFAULT NUM) 
+// Left Brace {
+ZMK_COMBO(cb_lbrc, &kp LBRC, RT1 RT2, DEFAULT) 
+// Right Brace {
+ZMK_COMBO(cb_rbrc, &kp RBRC, RT2 RT3, DEFAULT) 
+// Left Bracket [
+ZMK_COMBO(cb_lbkt, &kp LBKT, RB1 RB2, DEFAULT) 
+// Right Bracket ]
+ZMK_COMBO(cb_rbkt, &kp RBKT, RB2 RB3, DEFAULT) 
+
 
 / {
     behaviors {
@@ -257,11 +272,11 @@ ZMK_COMBO(cb_to_func, &to FUNC, RT5 RM5 RB5, DEFAULT)
             display-name = "SYMBOL";
             bindings = <
 //╭─────────────┬───────────────┬───────────────┬──────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        ___        &kp TILDE2       &kp LT          &kp GT        &kp PIPE      &kp DLLR                         ___                           XXX         &kp LBRC      &kp RBRC        XXX           XXX           XXX
+        ___        &kp TILDE2       &kp LT          &kp GT        &kp PIPE      &kp DLLR                         ___                           XXX           XXX           XXX           XXX           XXX           XXX
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        XXX        &kp EXCL         &kp ASTRK       &kp FSLH      &kp EQUAL     &kp AMPS           ___           ___           ___             XXX         &kp LPAR      &kp RPAR        XXX           XXX           XXX
+        XXX        &kp EXCL         &kp ASTRK       &kp FSLH      &kp EQUAL     &kp AMPS           ___           ___           ___             XXX           XXX           XXX           XXX           XXX           XXX
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        ___        &kp GRAVE        &kp MINUS       &kp PLUS      &kp PRCNT     &kp CARET          XXX           ___                           XXX         &kp LBKT      &kp RBKT        XXX           XXX           ___
+        ___        &kp GRAVE        &kp MINUS       &kp PLUS      &kp PRCNT     &kp CARET          XXX           ___                           XXX           XXX           XXX           XXX           XXX           ___
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        ___           ___           ___                                                         ___           ___           ___
 //                                              ╰──────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
