@@ -15,5 +15,18 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+    
+    # ZMK modules
+    - name: zmk-adaptive-key
+      path: modules/zmk/adaptive-key
+    - name: zmk-auto-layer
+      path: modules/zmk/auto-layer
+    - name: zmk-leader-key
+      path: modules/zmk/leader-key
+    - name: zmk-tri-state
+      path: modules/zmk/tri-state
+    - name: zmk-unicode
+      path: modules/zmk/unicode
+      
   self:
     path: config
