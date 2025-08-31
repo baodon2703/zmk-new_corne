@@ -156,8 +156,8 @@ layers:
   - $
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '{'
-  - '}'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -171,8 +171,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - (
-  - )
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -185,8 +185,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -250,4 +250,25 @@ combos:
   k: '&soft_off'
 - p: [11, 23, 35]
   k: {t: FUNC, h: toggle}
+  l: [ENTHIUM]
+- p: [15, 16]
+  k: $$mdi:keyboard-tab$$
+  l: [ENTHIUM]
+- p: [19, 20]
+  k: (
+  l: [ENTHIUM, NUMBER]
+- p: [20, 21]
+  k: )
+  l: [ENTHIUM, NUMBER]
+- p: [7, 8]
+  k: '{'
+  l: [ENTHIUM]
+- p: [8, 9]
+  k: '}'
+  l: [ENTHIUM]
+- p: [31, 32]
+  k: {t: '[', s: '{'}
+  l: [ENTHIUM]
+- p: [32, 33]
+  k: {t: ']', s: '}'}
   l: [ENTHIUM]
