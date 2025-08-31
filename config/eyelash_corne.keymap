@@ -110,7 +110,29 @@ ZMK_MOD_MORPH(lgui_qns_excl,
 SIMPLE_MORPH(cma_smcln,  SFT,   &kp COMMA,   &kp SEMICOLON)
 SIMPLE_MORPH(at_hash,    SFT,   &kp AT,      &kp HASH)
 
+/*  ---------------  */
+/*    Magic-shift    */
+/*  ---------------  */
 
+// Tap: repeat after alpha, else sticky-shift |
+// Shift + tap/ double-tap: caps-word | Hold: shift.
+#define MAGIC_SHIFT &magic_shift LSHFT 0
+ZMK_HOLD_TAP(magic_shift, bindings = <&kp>, <&magic_shift_tap>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_MOD_MORPH(magic_shift_tap, bindings = <&shift_repeat>, <&caps_word>;
+              mods = <(MOD_LSFT)>;)
+ZMK_ADAPTIVE_KEY(
+    shift_repeat, bindings = <&sk LSHFT>;
+    repeat {
+      trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+      bindings = <&key_repeat>;
+      max-prior-idle-ms = <1200>;
+      strict-modifiers;
+    };)
+&caps_word { // Mods deactivate caps-word, requires PR #1451. [TODO: rebase]
+  /delete-property/ ignore-modifiers;
+};
 
 
 / {
@@ -139,7 +161,7 @@ SIMPLE_MORPH(at_hash,    SFT,   &kp AT,      &kp HASH)
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp BSPC    &hml LCTRL SQT &hml LALT MINUS &lgui_qns_excl  &ls_dt_cln     &at_hash           ___        &kp DOWN                        &kp J     &hmr RSHFT M   &hmr RGUI G   &hmr RALT B   &hmr RCTRL V   &kp ENTER
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                  &lt 1 SPACE    &kp SPACE      &lt 2 TAB                                                   &lt 2 ESC       &kp R         &mo 3
+                                                  &lt 1 SPACE    &kp SPACE      &lt 2 TAB                                                  MAGIC_SHIFT      &kp R         &mo 3
 //                                              ╰──────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
         };
