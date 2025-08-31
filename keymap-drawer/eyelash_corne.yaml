@@ -6,7 +6,7 @@ layers:
   - Y
   - U
   - O
-  - '&cp_pst_cut_mv'
+  - {t: '&copy_paste_cCut', s: Gui+Alt+V}
   - $$mdi:volume-high$$
   - Q
   - L
