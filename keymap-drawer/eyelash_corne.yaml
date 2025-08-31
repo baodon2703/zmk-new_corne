@@ -51,12 +51,12 @@ layers:
   - {t: SYMBOL, h: SYMBOL}
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&w_qtl'
+  - '&w_qtr'
+  - '&w_qbl'
+  - '&w_qbr'
+  - '&w_full'
+  - '&zoom_in'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
@@ -64,13 +64,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&w_ttl'
+  - '&w_ttr'
+  - '&w_hleft'
+  - '&w_hright'
+  - '&w_hcenter'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&zoom_reset'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
@@ -85,7 +85,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&zoom_out'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&prev_desk'
   - '&next_desk'
@@ -160,7 +160,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&vn_en'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - '*'
@@ -271,4 +271,10 @@ combos:
   l: [ENTHIUM]
 - p: [32, 33]
   k: {t: ']', s: '}'}
+  l: [ENTHIUM]
+- p: [13, 25]
+  k: '&ss_zone'
+  l: [ENTHIUM]
+- p: [12, 24]
+  k: '&ss_mac_zone'
   l: [ENTHIUM]
