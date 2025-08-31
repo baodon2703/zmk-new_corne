@@ -143,6 +143,9 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
               tapping-term-ms = <200>;)
+// &num_word {
+//   continue-list = <BSPC DEL DOT COMMA>;
+// };
 
 // Tap: nav-word  | Hold: num-layer.
 #define SMART_NAV &smart_nav NAV NAV
@@ -167,8 +170,44 @@ ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
 /*  --------------  */
 &soft_off { hold-time-ms = <2000>; };
 
+// Navigation
 ZMK_MACRO(next_desk, bindings = <&kp LC(RIGHT) >;)
 ZMK_MACRO(prev_desk, bindings = <&kp LC(LEFT)>;)
+
+// Switch Language
+ZMK_MACRO(vn_en, bindings = <&kp LA(LG(SPACE))>;)
+
+// Zoom
+ZMK_MACRO(zoom_out, bindings = <&kp LG(MINUS)>;)
+ZMK_MACRO(zoom_in,  bindings = <&kp LG(EQUAL)>;)
+ZMK_MACRO(zoom_reset,  bindings = <&kp LG(N0)>;)
+
+// Windows Management - Half
+ZMK_MACRO(w_hleft, bindings = <&kp LC(LA(LEFT))>;)
+ZMK_MACRO(w_hright, bindings = <&kp LC(LA(RIGHT))>;)
+ZMK_MACRO(w_hcenter, bindings = <&kp LC(LA(DOWN))>;)
+
+// Windows Management - Quarter
+ZMK_MACRO(w_qtl, bindings = <&kp LC(LA(U))>;)
+ZMK_MACRO(w_qtr, bindings = <&kp LC(LA(I))>;)
+ZMK_MACRO(w_qbl, bindings = <&kp LC(LA(J))>;)
+ZMK_MACRO(w_qbr, bindings = <&kp LC(LA(K))>;)
+
+// Windows Management - Third
+ZMK_MACRO(w_tl, bindings = <&kp LC(LA(D))>;)
+ZMK_MACRO(w_tc, bindings = <&kp LC(LA(F))>;)
+ZMK_MACRO(w_tr, bindings = <&kp LC(LA(G))>;)
+
+// Windows Management - 2 Third
+ZMK_MACRO(w_ttl, bindings = <&kp LC(LA(E))>;)
+ZMK_MACRO(w_ttr, bindings = <&kp LC(LA(T))>;)
+
+// Windows Management - Fullscreen
+ZMK_MACRO(w_full, bindings = <&kp LC(LA(ENTER))>;)
+
+// Screenshots
+ZMK_MACRO(ss_zone, bindings = <&kp LG(LS(N2))>;) 
+ZMK_MACRO(ss_mc_zone, bindings = <&kp LG(LS(N4))>;)
 
 // Tap: Undo | Double-tap: Redo
 ZMK_TAP_DANCE(undo_redo, bindings = <&kp LG(Z)>, <&kp LG(LS(Z))>;
@@ -209,6 +248,10 @@ ZMK_COMBO(cb_lbkt, &kp LBKT, RB1 RB2, DEFAULT)
 // Right Bracket ]
 ZMK_COMBO(cb_rbkt, &kp RBKT, RB2 RB3, DEFAULT) 
 
+// Screenshots
+ZMK_COMBO(cb_ss,     &ss_zone,     LM4 LB4, DEFAULT) 
+ZMK_COMBO(cb_ss_mac, &ss_mac_zone, LM5 LB5, DEFAULT) 
+
 
 / {
     behaviors {
@@ -242,11 +285,11 @@ ZMK_COMBO(cb_rbkt, &kp RBKT, RB2 RB3, DEFAULT)
             display-name = "NAV";
             bindings = <
 //╭─────────────┬───────────────┬───────────────┬──────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        ___            XXX             XXX             XXX           XXX           XXX                           ___                           XXX           XXX         &kp UP          XXX           XXX           XXX
+        ___           &w_qtl          &w_qtr         &w_qbl         &w_qbr       &w_full                       &zoom_in                        XXX           XXX         &kp UP          XXX           XXX           XXX
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        XXX            XXX             XXX             XXX           XXX           XXX              ___          ___           ___             XXX        &kp LEFT      &kp DOWN      &kp RIGHT        XXX         &swapper
+        XXX           &w_ttl          &w_ttr        &w_hleft      &w_hright     &w_hcenter         ___       &zoom_reset       ___             XXX        &kp LEFT      &kp DOWN      &kp RIGHT        XXX         &swapper
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        ___         &kp LCTRL        &kp LALT        &kp LGUI     &kt LSHFT        XXX             XXX           ___                           XXX        &prev_desk    &next_desk       XXX           XXX           ___
+        ___         &kp LCTRL        &kp LALT        &kp LGUI     &kt LSHFT        XXX             XXX        &zoom_out                        XXX        &prev_desk    &next_desk       XXX           XXX           ___
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        ___           ___          ___                                                          ___           ___           ___
 //                                              ╰──────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
@@ -272,7 +315,7 @@ ZMK_COMBO(cb_rbkt, &kp RBKT, RB2 RB3, DEFAULT)
             display-name = "SYMBOL";
             bindings = <
 //╭─────────────┬───────────────┬───────────────┬──────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        ___        &kp TILDE2       &kp LT          &kp GT        &kp PIPE      &kp DLLR                         ___                           XXX           XXX           XXX           XXX           XXX           XXX
+        ___        &kp TILDE2       &kp LT          &kp GT        &kp PIPE      &kp DLLR                         ___                           XXX           XXX           XXX           XXX           XXX          &vn_en
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         XXX        &kp EXCL         &kp ASTRK       &kp FSLH      &kp EQUAL     &kp AMPS           ___           ___           ___             XXX           XXX           XXX           XXX           XXX           XXX
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
