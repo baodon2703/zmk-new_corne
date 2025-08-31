@@ -147,10 +147,19 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
               tapping-term-ms = <200>;)
 
+// Tap: nav-word  | Hold: num-layer.
+#define SMART_NAV &smart_nav NAV
+ZMK_HOLD_TAP(smart_nav, bindings = <&mo>, <&nav_word NAV>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
 / {
     behaviors {
-        
+        nav_word: nav_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <LEFT DOWN UP RIGHT>;
+            ignore-modifiers;
+        };
     };
     combos {
         compatible = "zmk,combos";
@@ -174,7 +183,7 @@ ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp BSPC    &hml LCTRL SQT &hml LALT MINUS &lgui_qns_excl  &ls_dt_cln     &at_hash           ___        &kp DOWN                        &kp J     &hmr RSHFT M   &hmr RGUI G   &hmr RALT B   &hmr RCTRL V   &kp ENTER
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                    SMART_NUM     &kp SPACE     &lt 2 TAB                                                  MAGIC_SHIFT      &kp R         &mo 3
+                                                    SMART_NUM     &kp SPACE     &lt 2 TAB                                                  MAGIC_SHIFT      &kp R        SMART_NAV
 //                                              ╰──────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
         };
