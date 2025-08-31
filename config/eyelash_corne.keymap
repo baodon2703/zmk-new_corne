@@ -230,27 +230,27 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
 /*  ---------------  */
 
 // Turn off the device
-ZMK_COMBO(cb_soft_off, &soft_off, LH0 RH0, ALL) 
+ZMK_COMBO(cb_soft_off,   &soft_off, 44 45,      ALL) 
 // Activate FUNC layer
-ZMK_COMBO(cb_to_func, &to FUNC, RT5 RM5 RB5, DEFAULT) 
+ZMK_COMBO(cb_to_func,    &to FUNC,  12 27 41,   DEFAULT) 
 // Tab 
-ZMK_COMBO(cb_tab, &kp TAB, LM2 LM1, DEFAULT) 
+ZMK_COMBO(cb_tab,        &kp TAB,   16 17,      DEFAULT) 
 // Left Para (
-ZMK_COMBO(cb_lpar, &kp LPAR, RM1 RM2, DEFAULT NUM) 
+ZMK_COMBO(cb_lpar,       &kp LPAR,  23 24,      DEFAULT NUM) 
 // Right Para )
-ZMK_COMBO(cb_rpar, &kp RPAR, RM2 RM3, DEFAULT NUM) 
+ZMK_COMBO(cb_rpar,       &kp RPAR,  24 25,      DEFAULT NUM) 
 // Left Brace {
-ZMK_COMBO(cb_lbrc, &kp LBRC, RT1 RT2, DEFAULT) 
+ZMK_COMBO(cb_lbrc,       &kp LBRC,  8 9,        DEFAULT) 
 // Right Brace {
-ZMK_COMBO(cb_rbrc, &kp RBRC, RT2 RT3, DEFAULT) 
+ZMK_COMBO(cb_rbrc,       &kp RBRC,  9 10,       DEFAULT) 
 // Left Bracket [
-ZMK_COMBO(cb_lbkt, &kp LBKT, RB1 RB2, DEFAULT) 
+ZMK_COMBO(cb_lbkt,       &kp LBKT,  37 38,      DEFAULT) 
 // Right Bracket ]
-ZMK_COMBO(cb_rbkt, &kp RBKT, RB2 RB3, DEFAULT) 
+ZMK_COMBO(cb_rbkt,       &kp RBKT,  38 39,      DEFAULT) 
 
 // Screenshots
-ZMK_COMBO(cb_ss,     &ss_zone,     LM4 LB4, DEFAULT) 
-ZMK_COMBO(cb_ss_mac, &ss_mc_zone, LM5 LB5, DEFAULT) 
+ZMK_COMBO(cb_ss,         &ss_zone,    14 29,    DEFAULT) 
+ZMK_COMBO(cb_ss_mac,     &ss_mc_zone, 13 28,    DEFAULT) 
 
 
 / {
@@ -342,6 +342,17 @@ ZMK_COMBO(cb_ss_mac, &ss_mc_zone, LM5 LB5, DEFAULT)
         };
     };
 };
+
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+//       0             1             2             3             4             5                             6                             7             8              9            10            11            12
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//      13            14            15            16            17            18              19            20             21             22            23             24            25            26            27
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//      28            29            30            31            32            33              34            35                            36            37             38            39            40            41
+//╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+//                                                42            43            44                                                          45             46            47
+//                                          ╰─────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
+
 
 /*                                      42 KEY MATRIX / LAYOUT MAPPING
 
