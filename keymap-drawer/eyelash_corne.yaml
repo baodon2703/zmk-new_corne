@@ -276,5 +276,5 @@ combos:
   k: '&ss_zone'
   l: [ENTHIUM]
 - p: [12, 24]
-  k: '&ss_mac_zone'
+  k: '&ss_mc_zone'
   l: [ENTHIUM]
