@@ -19,7 +19,7 @@ layers:
   - I
   - E
   - A
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ',', s: ;}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
