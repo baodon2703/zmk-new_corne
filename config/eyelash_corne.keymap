@@ -175,9 +175,10 @@ ZMK_TAP_DANCE(undo_redo, bindings = <&kp LG(Z)>, <&kp LG(LS(Z))>;
               tapping-term-ms = <200>;)
 
 // Tap: Copy | Double Tab: Paste | Ctrl: Cut | Alt: Mac Paste Cut file
-ZMK_TAP_DANCE(cp_pst,
-    &kp LG(C),   /* single tap  */
-    &kp LG(V)    /* double tap  */
+ZMK_TAP_DANCE(cp_pst, bindings = 
+    <&kp LG(C)>,   /* single tap  */
+    <&kp LG(V)>;    /* double tap  */
+    tapping-term-ms = <200>;
 );
 ZMK_MOD_MORPH(cp_pst_cut,
     bindings = <&copy_paste_td>, <&kp LG(X)>; /* Ctrl Override */
