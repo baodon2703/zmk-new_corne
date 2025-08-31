@@ -178,11 +178,11 @@ ZMK_TAP_DANCE(undo_redo, bindings = <&kp LG(Z)>, <&kp LG(LS(Z))>;
 ZMK_TAP_DANCE(cp_pst, bindings = <&kp LG(C)>, <&kp LG(V)>; 
               tapping-term-ms = <200>;)
 ZMK_MOD_MORPH(cp_pst_cut,
-    bindings = <&copy_paste_td>, <&kp LG(X)>; /* Ctrl Override */
+    bindings = <&cp_pst>, <&kp LG(X)>; /* Ctrl Override */
     mods = <(MOD_LCTL|MOD_RCTL)>; 
 )
 ZMK_MOD_MORPH(cp_pst_cut_mv,
-    bindings = <&copy_paste_cCut>, <&kp LG(LA(V))>;
+    bindings = <&cp_pst_cut>, <&kp LG(LA(V))>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
 )
 
