@@ -245,3 +245,39 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ENTHIUM, h: toggle}
+combos:
+- p: [44, 45]
+  k: '&soft_off'
+- p: [12, 27, 41]
+  k: {t: FUNC, h: toggle}
+  l: [ENTHIUM]
+- p: [14, 29]
+  k: '&ss_zone'
+  l: [ENTHIUM]
+- p: [13, 28]
+  k: '&ss_mc_zone'
+  l: [ENTHIUM]
+- p: [15, 16]
+  k: $$mdi:keyboard-tab$$
+  l: [ENTHIUM]
+- p: [23, 24]
+  k: (
+  l: [ENTHIUM, NUMBER]
+- p: [24, 25]
+  k: )
+  l: [ENTHIUM, NUMBER]
+- p: [37, 38]
+  k: {t: '[', s: '{'}
+  l: [ENTHIUM]
+- p: [38, 39]
+  k: {t: ']', s: '}'}
+  l: [ENTHIUM]
+- p: [8, 9]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [ENTHIUM]
+- p: [9, 10]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [ENTHIUM]
+- p: [25, 26]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [ENTHIUM]
