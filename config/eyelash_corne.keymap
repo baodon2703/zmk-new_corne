@@ -241,10 +241,10 @@ ZMK_TAP_DANCE(undo_redo, bindings = <&kp LG(Z)>, <&kp LG(LS(Z))>;
 // Tap: Copy | Double Tab: Paste | Ctrl: Cut | Alt: Mac Paste Cut file
 ZMK_TAP_DANCE(cp_pst, bindings = <&kp LG(C)>, <&kp LG(V)>; 
               tapping-term-ms = <200>;)
-ZMK_HOLD_TAP(cp_pst_cut, bindings = <&kp LG(X)>, <&cp_pst>; flavor = "balanced";
+ZMK_HOLD_TAP(cp_pst_cut, bindings = <&kp>, <&cp_pst>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_MOD_MORPH(cp_pst_cut_mv,
-    bindings = <&cp_pst_cut>, <&kp LG(LA(V))>;
+    bindings = <&cp_pst_cut LG(X)>, <&kp LG(LA(V))>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
 )
 
