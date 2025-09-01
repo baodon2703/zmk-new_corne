@@ -30,7 +30,7 @@ layers:
   - S
   - F
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '"', h: LGUI, s: ''''}
+  - {t: '"', h: LCTL, s: ''''}
   - {t: '-', h: Alt, s: _}
   - {t: '?', h: LGUI, s: '!'}
   - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: ':'}
@@ -171,8 +171,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '{'
-  - '}'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
