@@ -15,33 +15,33 @@ layers:
   - X
   - Undo Redo
   - W
-  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: E, h: LGUI}
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - C
+  - I
+  - E
+  - A
   - {t: ',', s: ;}
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
   - K
-  - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: T, h: RGUI}
-  - {t: N, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - H
+  - T
+  - N
+  - S
   - F
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '"', s: ''''}
-  - {t: '-', s: _}
-  - {t: '?', s: '!'}
-  - {t: ., s: ':'}
+  - {t: '"', h: LGUI, s: ''''}
+  - {t: '-', h: Alt, s: _}
+  - {t: '?', h: LGUI, s: '!'}
+  - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '@', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
   - J
-  - M
-  - G
-  - B
-  - V
+  - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: G, h: RGUI}
+  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '&num_dance', h: NUMBER}
   - $$mdi:keyboard-space$$
