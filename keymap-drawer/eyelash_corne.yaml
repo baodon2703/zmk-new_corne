@@ -15,10 +15,10 @@ layers:
   - X
   - Undo Redo
   - W
-  - C
-  - I
-  - E
-  - A
+  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: E, h: LGUI}
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ',', s: ;}
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
@@ -30,10 +30,10 @@ layers:
   - S
   - F
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '''', h: Ctrl, s: '"'}
-  - {t: '-', h: Alt, s: _}
-  - {t: '?', h: LGUI, s: '!'}
-  - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '-', s: _}
+  - {t: '?', s: '!'}
+  - {t: ., s: ':'}
   - {t: '@', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
@@ -171,8 +171,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '{'
+  - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -245,39 +245,3 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ENTHIUM, h: toggle}
-combos:
-- p: [44, 45]
-  k: '&soft_off'
-- p: [12, 27, 41]
-  k: {t: FUNC, h: toggle}
-  l: [ENTHIUM]
-- p: [16, 17]
-  k: $$mdi:keyboard-tab$$
-  l: [ENTHIUM]
-- p: [23, 24]
-  k: (
-  l: [ENTHIUM, NUMBER]
-- p: [24, 25]
-  k: )
-  l: [ENTHIUM, NUMBER]
-- p: [8, 9]
-  k: '{'
-  l: [ENTHIUM]
-- p: [9, 10]
-  k: '}'
-  l: [ENTHIUM]
-- p: [37, 38]
-  k: {t: '[', s: '{'}
-  l: [ENTHIUM]
-- p: [38, 39]
-  k: {t: ']', s: '}'}
-  l: [ENTHIUM]
-- p: [14, 29]
-  k: '&ss_zone'
-  l: [ENTHIUM]
-- p: [13, 28]
-  k: '&ss_mc_zone'
-  l: [ENTHIUM]
-- p: [25, 26]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [ENTHIUM]
