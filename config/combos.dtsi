@@ -63,4 +63,4 @@ ZMK_COMBO(cb_bksp,       &kp BSPC,     8 9,        DEFAULT)
 ZMK_COMBO(cb_del,        &kp DEL,      9 10,       DEFAULT)
 
 // Enter
-ZMK_COMBO(cb_enter,      &kp ENTER,    25 26,      DEFAULT)
+ZMK_COMBO(cb_enter,      &kp ENTER,    39 40,      DEFAULT)
