@@ -24,10 +24,10 @@ layers:
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
   - K
-  - H
-  - T
-  - N
-  - S
+  - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: T, h: RGUI}
+  - {t: N, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - F
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '"', s: ''''}
@@ -38,10 +38,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
   - J
-  - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: RGUI}
-  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-control$$'}
+  - M
+  - G
+  - B
+  - V
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '&num_dance', h: NUMBER}
   - $$mdi:keyboard-space$$
