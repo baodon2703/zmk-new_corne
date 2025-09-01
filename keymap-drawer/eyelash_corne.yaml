@@ -46,7 +46,7 @@ layers:
   - {t: '&num_dance', h: NUMBER}
   - $$mdi:keyboard-space$$
   - {t: '&nav_word 1', h: NAV}
-  - {t: '&shift_repeat', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - R
   - {t: SYMBOL, h: SYMBOL}
   NAV:
@@ -278,6 +278,6 @@ combos:
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
   l: [ENTHIUM]
-- p: [39, 40]
+- p: [25, 26]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [ENTHIUM]
