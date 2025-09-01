@@ -6,7 +6,7 @@ layers:
   - Y
   - U
   - O
-  - {t: '&cp_pst_cut LG(X)', s: Gui+Alt+V}
+  - {t: '&cp_pst_cut', s: Gui+Alt+V}
   - $$mdi:volume-high$$
   - Q
   - L
