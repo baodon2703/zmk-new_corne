@@ -51,11 +51,11 @@ layers:
   - {t: SYMBOL, h: SYMBOL}
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&w_qtl'
+  - '&w_qtr'
+  - '&w_qbl'
+  - '&w_qbr'
+  - '&w_full'
   - '&zoom_in'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -64,11 +64,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&w_ttl'
+  - '&w_ttr'
+  - '&w_hleft'
+  - '&w_hright'
+  - '&w_hcenter'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&zoom_reset'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -100,11 +100,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&w_qtl'
-  - '&w_qtr'
-  - '&w_qbl'
-  - '&w_qbr'
-  - '&w_full'
+  - '&close_app'
+  - '&close_win'
+  - '&find'
+  - '&refresh'
+  - '&new_private_tab'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP MULTIPLY
   - KP 7
@@ -113,11 +113,11 @@ layers:
   - $
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&w_ttl'
-  - '&w_ttr'
-  - '&w_hleft'
-  - '&w_hright'
-  - '&w_hcenter'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&save_file'
+  - '&select_nxt_word'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&new_tab'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -128,11 +128,11 @@ layers:
   - KP MINUS
   - KP EQUAL
   - {t: '$$mdi:transfer$$', type: trans}
+  - AC UNDO
+  - AC REDO
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP DIVIDE
@@ -274,10 +274,7 @@ combos:
   l: [ENTHIUM]
 - p: [8, 9]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [ENTHIUM]
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
-  l: [ENTHIUM]
 - p: [25, 26]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [ENTHIUM]
