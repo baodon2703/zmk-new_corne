@@ -108,7 +108,7 @@ ZMK_MOD_MORPH(lg_qns_excl,
 )
 
 ZMK_MOD_MORPH(lc_rvs_quote,
-    bindings = <&hml LGUI DQT>, <&kp SQT>;
+    bindings = <&hml LCTL DQT>, <&kp SQT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -123,7 +123,7 @@ SIMPLE_MORPH(at_hash,    SFT,   &kp AT,      &kp HASH)
 /*    Magic-shift    */
 /*  ---------------  */
 
-// Tap: repeat after alpha, else sticky-shift |
+// Tap: sticky-shift |
 // Shift + tap/ double-tap: caps-word | Hold: shift.
 #define MAGIC_SHIFT &magic_shift LSHFT 0
 ZMK_HOLD_TAP(magic_shift, bindings = <&kp>, <&magic_shift_tap>;
@@ -234,11 +234,6 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
     mods = <(MOD_LCTL|MOD_RCTL)>;
 )
 
-
-
-
-
-
 / {
     behaviors {
         nav_word: nav_word {
@@ -303,7 +298,7 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
 //╭─────────────┬───────────────┬───────────────┬──────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         ___        &kp TILDE2       &kp LT          &kp GT        &kp PIPE      &kp DLLR                         XXX                           XXX           XXX           XXX           XXX           XXX          &vn_en
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        XXX        &kp EXCL         &kp ASTRK       &kp FSLH      &kp EQUAL     &kp AMPS           XXX           XXX           XXX             XXX         &kp LBRC      &kp RBRC        XXX           XXX           XXX
+        XXX        &kp EXCL         &kp ASTRK       &kp FSLH      &kp EQUAL     &kp AMPS           XXX           XXX           XXX             XXX           XXX           XXX           XXX           XXX           XXX
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         ___        &kp GRAVE        &kp MINUS       &kp PLUS      &kp PRCNT     &kp CARET          XXX           XXX                           XXX           XXX           XXX           XXX           XXX           ___
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
