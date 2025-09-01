@@ -30,7 +30,7 @@ layers:
   - S
   - F
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '''', s: '"'}
+  - {t: '"', s: ''''}
   - {t: '-', s: _}
   - {t: '?', s: '!'}
   - {t: ., s: ':'}
@@ -278,6 +278,6 @@ combos:
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
   l: [ENTHIUM]
-- p: [25, 26]
+- p: [39, 40]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [ENTHIUM]
