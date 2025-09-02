@@ -56,7 +56,7 @@ layers:
   - '&w_qbl'
   - '&w_qbr'
   - '&w_full'
-  - '&zoom_in'
+  - Zoom Out
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
@@ -70,7 +70,7 @@ layers:
   - '&w_hright'
   - '&w_hcenter'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&zoom_reset'
+  - Zoom Reset
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
@@ -85,11 +85,11 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&zoom_out'
+  - Zoom In
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&prev_desk'
-  - '&next_desk'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&next_desk'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -100,11 +100,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&close_app'
-  - '&close_win'
-  - '&find'
-  - '&refresh'
-  - '&new_private_tab'
+  - Close App
+  - Close Window
+  - Find
+  - Refresh
+  - Incognito
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP MULTIPLY
   - KP 7
@@ -114,10 +114,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&save_file'
-  - '&select_nxt_word'
+  - Save
+  - Select Word
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&new_tab'
+  - New Tab
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -144,7 +144,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP COMMA
+  - {t: ',', s: <}
   - KP DOT
   - KP 0
   SYMBOL:
