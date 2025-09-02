@@ -194,24 +194,30 @@ parse_config:
       tap: 'Screenshot'
     "&ss_mc_zone":
       tap: 'Screenshot'
-    "close_win":
+    "&close_win":
       tap: 'Close Window'
-    "close_app":
+    "&close_app":
       tap: 'Close App'
-    "find":
+    "&find":
       tap: 'Find'
-    "find_all":
+    "&find_all":
       tap: 'Find All'
-    "new_tab":
+    "&new_tab":
       tap: 'New Tab'
-    "new_private_tab":
+    "&new_private_tab":
       tap: 'Incognito'
-    "save_file":
+    "&save_file":
       tap: 'Save'
-    "refresh":
+    "&refresh":
       tap: 'Refresh'
-    "select_nxt_word":
+    "&select_nxt_word":
       tap: 'Select Word'
+    "&zoom_out":
+      tap: 'Zoom In'
+    "&zoom_in":
+      tap: 'Zoom Out'
+    "&zoom_reset":
+      tap: 'Zoom Reset'
     # Mouse
     "&msc SCRL_UP":
       tap: $$mdi:pan-up$$

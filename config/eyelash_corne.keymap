@@ -153,9 +153,9 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
               tapping-term-ms = <200>;)
-// &num_word {
-//   continue-list = <BSPC DEL DOT COMMA>;
-// };
+&num_word {
+  continue-list = <BSPC DEL DOT COMMA KP_EQUAL AMPS KP_MINUS DLLR KP_DOT KP_DIVIDE KP_PLUS KP_MULTIPLY>;
+};
 
 // Tap: nav-word  | Hold: num-layer.
 #define SMART_NAV &smart_nav NAV NAV
@@ -251,7 +251,7 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT>;
+            continue-list = <LEFT DOWN UP RIGHT LGUI LCTRL TAB N0 EQUAL MINUS DEL BSPC>;
             ignore-modifiers;
         };
     };
@@ -278,11 +278,11 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
             display-name = "NAV";
             bindings = <
 //╭─────────────┬───────────────┬───────────────┬──────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        ___           &w_qtl          &w_qtr         &w_qbl         &w_qbr       &w_full                      &zoom_in                        XXX           XXX         &kp UP          XXX           XXX           XXX
+        ___           &w_qtl          &w_qtr         &w_qbl         &w_qbr       &w_full                       &zoom_in                        XXX           XXX         &kp UP          XXX           XXX           XXX
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         XXX           &w_ttl          &w_ttr        &w_hleft      &w_hright     &w_hcenter         XXX       &zoom_reset       XXX             XXX        &kp LEFT      &kp DOWN      &kp RIGHT        XXX         &swapper
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        ___         &kp LCTRL        &kp LALT        &kp LGUI     &kt LSHFT        XXX             XXX        &zoom_out                        XXX        &prev_desk    &next_desk       XXX           XXX           ___
+        ___         &kp LCTRL        &kp LALT        &kp LGUI     &kt LSHFT        XXX             XXX        &zoom_out                        XXX        &prev_desk       XXX        &next_desk       XXX           ___
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        ___           ___          ___                                                          ___           ___           ___
 //                                              ╰──────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
@@ -299,7 +299,7 @@ ZMK_MOD_MORPH(cp_pst_cut_mv,
 //├─────────────┼───────────────┼───────────────┼──────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         ___       &kp C_AC_UNDO  &kp C_AC_REDO         ___           ___        &kp ENTER          XXX           XXX                      &kp KP_DIVIDE   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp AMPS         ___
 //╰─────────────┴───────────────┴───────────────┼──────────────┼─────────────┼─────────────┤ ╰─────────────┴─────────────┴─────────────╯ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                       ___           ___           ___                                                    &kp KP_COMMA    &kp KP_DOT    &kp KP_N0
+                                                       ___           ___           ___                                                      &kp COMMA     &kp KP_DOT    &kp KP_N0
 //                                              ╰──────────────┴─────────────┴─────────────╯                                             ╰─────────────┴─────────────┴─────────────╯
             >;
         };
