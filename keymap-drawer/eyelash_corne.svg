@@ -308,8 +308,9 @@ rect.held, rect.combo.held {
 <g transform="translate(308, 41)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;cp_pst_c…</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Gui+Alt+V</tspan></text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">Super</tspan><tspan x="0" dy="1.2em">Copy</tspan>
+</text>
 </g>
 <g transform="translate(546, 41)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -511,7 +512,9 @@ rect.held, rect.combo.held {
 <g transform="translate(224, 203)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;num_dance</tspan></text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-1.2em">NUM</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
 <a href="#NUMBER">
 <text x="0" y="24" class="key hold layer-activator">NUMBER</text>
 </a></g>
@@ -524,7 +527,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 67%">&amp;nav_word</tspan><tspan x="0" dy="1.2em" style="font-size: 67%">1</tspan>
+<tspan x="0" dy="-1.2em">NAV</tspan><tspan x="0" dy="1.2em">Hold</tspan>
 </text>
 <a href="#NAV">
 <text x="0" y="24" class="key hold layer-activator">NAV</text>
@@ -565,11 +568,11 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="70" y="120" width="28" height="26" class="combo"/>
-<text x="84" y="133" class="combo tap"><tspan style="font-size: 75%">&amp;ss_zone</tspan></text>
+<text x="84" y="133" class="combo tap"><tspan style="font-size: 60%">Screenshot</tspan></text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="14" y="120" width="28" height="26" class="combo"/>
-<text x="28" y="133" class="combo tap"><tspan style="font-size: 60%">&amp;ss_mc_zo…</tspan></text>
+<text x="28" y="133" class="combo tap"><tspan style="font-size: 60%">Screenshot</tspan></text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>

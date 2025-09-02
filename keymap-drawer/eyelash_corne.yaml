@@ -6,7 +6,7 @@ layers:
   - Y
   - U
   - O
-  - {t: '&cp_pst_cut', s: Gui+Alt+V}
+  - Super Copy
   - $$mdi:volume-high$$
   - Q
   - L
@@ -43,9 +43,9 @@ layers:
   - {t: B, h: '$$mdi:apple-keyboard-option$$'}
   - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '&num_dance', h: NUMBER}
+  - {t: NUM Word, h: NUMBER}
   - $$mdi:keyboard-space$$
-  - {t: '&nav_word 1', h: NAV}
+  - {t: NAV Hold, h: NAV}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - R
   - {t: SYMBOL, h: SYMBOL}
@@ -252,10 +252,10 @@ combos:
   k: {t: FUNC, h: toggle}
   l: [ENTHIUM]
 - p: [14, 29]
-  k: '&ss_zone'
+  k: Screenshot
   l: [ENTHIUM]
 - p: [13, 28]
-  k: '&ss_mc_zone'
+  k: Screenshot
   l: [ENTHIUM]
 - p: [15, 16]
   k: $$mdi:keyboard-tab$$
