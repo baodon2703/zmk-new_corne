@@ -104,7 +104,7 @@ layers:
   - Close Window
   - Find
   - Refresh
-  - Incognito
+  - '&new_file'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP MULTIPLY
   - KP 7
@@ -128,10 +128,10 @@ layers:
   - KP MINUS
   - KP EQUAL
   - {t: '$$mdi:transfer$$', type: trans}
-  - AC UNDO
-  - AC REDO
+  - UNDO
+  - REDO
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&quick_cmd_tab'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -139,14 +139,14 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - '&'
+  - ':'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ',', s: <}
   - KP DOT
   - KP 0
+  - {t: ',', s: <}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
