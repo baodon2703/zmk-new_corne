@@ -128,8 +128,8 @@ layers:
   - KP MINUS
   - KP EQUAL
   - {t: '$$mdi:transfer$$', type: trans}
-  - UNDO
-  - REDO
+  - '&undo'
+  - '&redo'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&quick_cmd_tab'
   - {t: '$$mdi:keyboard-return$$', type: enter}
