@@ -13,54 +13,60 @@
   ╰───────────╮ LH2 LH1 LH0 │ │          │ │ RH0 RH1 RH2 ╭───────────╯
               ╰─────────────╯ ╰──────────╯ ╰─────────────╯             */
 
-#include "eyelash_corne_keylabels.h"
+#pragma once
 
-#define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 30
+#define DU   6  // Joystick Up
+#define DL  19  // Left
+#define DR  21  // Right
+#define DD  35  // Down
+#define DC  20  // Center
 
-#define COMBO_IDLE_FAST 150
-#define COMBO_IDLE_SLOW 50
+#define LT0  5  // left-top row
+#define LT1  4
+#define LT2  3
+#define LT3  2
+#define LT4  1
+#define LT5  0
 
+#define RT0  7  // right-top row
+#define RT1  8
+#define RT2  9
+#define RT3 10
+#define RT4 11
+#define RT5 12
 
-/*  --------------  */
-/*        Misc      */
-/*  --------------  */
+#define LM0 18  // left-middle row
+#define LM1 17
+#define LM2 16
+#define LM3 15
+#define LM4 14
+#define LM5 13
 
-// Turn off the device
-&soft_off { hold-time-ms = <2000>; };
-ZMK_COMBO(cb_soft_off,   &soft_off,    LH0 RH0,      ALL) 
+#define RM0 22  // right-middle row
+#define RM1 23
+#define RM2 24
+#define RM3 25
+#define RM4 26
+#define RM5 27
 
-// Activate FUNC layer
-ZMK_COMBO(cb_to_func,    &to FUNC,     RT5 RM5 RB5,   DEFAULT) 
+#define LB0 33  // left-bottom row
+#define LB1 32
+#define LB2 31
+#define LB3 30
+#define LB4 29
+#define LB5 28
 
-// Screenshots
-ZMK_COMBO(cb_ss,         &ss_zone,     LM4 LB4,      DEFAULT) 
-ZMK_COMBO(cb_ss_mac,     &ss_mc_zone,  LM5 LB5,      DEFAULT) 
+#define RB0 36  // right-bottom row
+#define RB1 37
+#define RB2 38
+#define RB3 39
+#define RB4 40
+#define RB5 41
 
+#define LH0 44  // left thumb keys
+#define LH1 43
+#define LH2 42
 
-/*  --------------  */
-/*     Left Hand    */
-/*  --------------  */
-// Tab 
-ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT) 
-
-
-/*  --------------  */
-/*    Right Hand    */
-/*  --------------  */
-
-// Left Para (
-ZMK_COMBO(cb_lpar,       &kp LPAR,     RM1 RM2,      DEFAULT NUM) 
-// Right Para )
-ZMK_COMBO(cb_rpar,       &kp RPAR,     RM2 RM3,      DEFAULT NUM) 
-// Left Bracket [
-ZMK_COMBO(cb_lbkt,       &kp LBKT,     RB1 RB2,      DEFAULT) 
-// Right Bracket ]
-ZMK_COMBO(cb_rbkt,       &kp RBKT,     RB2 RB3,      DEFAULT) 
-
-// Backspace
-ZMK_COMBO(cb_bksp,       &kp BSPC,     RT1 RT2,        ALL)
-ZMK_COMBO(cb_del,        &kp DEL,      RT2 RT3,       ALL)
-
-// Enter
-ZMK_COMBO(cb_enter,      &kp ENTER,    RM3 RM4,      ALL)
+#define RH0 45  // right thumb keys
+#define RH1 46
+#define RH2 47
