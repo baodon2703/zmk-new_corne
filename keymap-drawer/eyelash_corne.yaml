@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  ENTHIUM:
+  Enthium:
   - $$mdi:keyboard-esc$$
   - Z
   - Y
@@ -43,13 +43,13 @@ layers:
   - {t: B, h: '$$mdi:apple-keyboard-option$$'}
   - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: NUM Word, h: NUMBER}
+  - {t: NUM Word, h: Numbers}
   - $$mdi:keyboard-space$$
-  - {t: NAV Hold, h: NAV}
+  - {t: NAV Hold, h: '1'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - R
-  - {t: SYMBOL, h: SYMBOL}
-  NAV:
+  - {t: Symbols, h: Symbols}
+  '1':
   - {t: '$$mdi:transfer$$', type: trans}
   - '&w_qtl'
   - '&w_qtr'
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  NUMBER:
+  Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Close App
   - Close Window
@@ -147,7 +147,7 @@ layers:
   - KP DOT
   - KP 0
   - {t: ',', s: <}
-  SYMBOL:
+  Symbols:
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - <
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  FUNC:
+  Functions:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -244,34 +244,34 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ENTHIUM, h: toggle}
+  - {t: Enthium, h: toggle}
 combos:
 - p: [44, 45]
   k: '&soft_off'
 - p: [12, 27, 41]
-  k: {t: FUNC, h: toggle}
-  l: [ENTHIUM]
+  k: {t: Functions, h: toggle}
+  l: [Enthium]
 - p: [14, 29]
   k: Screenshot
-  l: [ENTHIUM]
+  l: [Enthium]
 - p: [13, 28]
   k: Screenshot
-  l: [ENTHIUM]
+  l: [Enthium]
 - p: [15, 16]
   k: $$mdi:keyboard-tab$$
-  l: [ENTHIUM]
+  l: [Enthium]
 - p: [23, 24]
   k: (
-  l: [ENTHIUM, NUMBER]
+  l: [Enthium, Numbers]
 - p: [24, 25]
   k: )
-  l: [ENTHIUM, NUMBER]
+  l: [Enthium, Numbers]
 - p: [37, 38]
   k: {t: '[', s: '{'}
-  l: [ENTHIUM]
+  l: [Enthium]
 - p: [38, 39]
   k: {t: ']', s: '}'}
-  l: [ENTHIUM]
+  l: [Enthium]
 - p: [8, 9]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [9, 10]

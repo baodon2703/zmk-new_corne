@@ -277,8 +277,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-ENTHIUM">
-<text x="0" y="28" class="label" id="ENTHIUM">ENTHIUM:</text>
+<g transform="translate(40, 0)" class="layer-Enthium">
+<text x="0" y="28" class="label" id="Enthium">Enthium:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -515,8 +515,8 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">NUM</tspan><tspan x="0" dy="1.2em">Word</tspan>
 </text>
-<a href="#NUMBER">
-<text x="0" y="24" class="key hold layer-activator">NUMBER</text>
+<a href="#Numbers">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">Numbers</tspan></text>
 </a></g>
 <g transform="translate(285, 209) rotate(12.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -529,8 +529,8 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">NAV</tspan><tspan x="0" dy="1.2em">Hold</tspan>
 </text>
-<a href="#NAV">
-<text x="0" y="24" class="key hold layer-activator">NAV</text>
+<a href="#x_x">
+<text x="0" y="24" class="key hold layer-activator">1</text>
 </a></g>
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -547,10 +547,10 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#SYMBOL">
-<text x="0" y="-4" class="key tap layer-activator">SYMBOL</text>
-</a><a href="#SYMBOL">
-<text x="0" y="24" class="key hold layer-activator">SYMBOL</text>
+<a href="#Symbols">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">Symbols</tspan></text>
+</a><a href="#Symbols">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">Symbols</tspan></text>
 </a></g>
 <g class="combo combopos-0">
 <path d="M490,225 l-123,0" class="combo"/>
@@ -562,8 +562,8 @@ rect.held, rect.combo.held {
 <path d="M952,105 l0,-37" class="combo"/>
 <path d="M952,105 l0,37" class="combo"/>
 <rect rx="6" ry="6" x="938" y="92" width="28" height="26" class="combo"/>
-<a href="#FUNC">
-<text x="952" y="105" class="combo tap layer-activator">FUNC</text>
+<a href="#Functions">
+<text x="952" y="105" class="combo tap layer-activator"><tspan style="font-size: 67%">Functions</tspan></text>
 </a><text x="952" y="116" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
@@ -610,8 +610,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 318)" class="layer-NAV">
-<text x="0" y="28" class="label" id="NAV">NAV:</text>
+<g transform="translate(40, 318)" class="layer-1">
+<text x="0" y="28" class="label" id="x_x">1:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -879,8 +879,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 637)" class="layer-NUMBER">
-<text x="0" y="28" class="label" id="NUMBER">NUMBER:</text>
+<g transform="translate(40, 637)" class="layer-Numbers">
+<text x="0" y="28" class="label" id="Numbers">Numbers:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1190,8 +1190,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 955)" class="layer-SYMBOL">
-<text x="0" y="28" class="label" id="SYMBOL">SYMBOL:</text>
+<g transform="translate(40, 955)" class="layer-Symbols">
+<text x="0" y="28" class="label" id="Symbols">Symbols:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1456,8 +1456,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1274)" class="layer-FUNC">
-<text x="0" y="28" class="label" id="FUNC">FUNC:</text>
+<g transform="translate(40, 1274)" class="layer-Functions">
+<text x="0" y="28" class="label" id="Functions">Functions:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -1536,8 +1536,9 @@ rect.held, rect.combo.held {
 <g transform="translate(84, 105)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="24" class="key hold">1</text>
-<use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="-8" y="-24" height="15" width="15.0" class="key shifted glyph mdi:bluetooth-connect"/>
+<a href="#x_x">
+<text x="0" y="24" class="key hold layer-activator">1</text>
+</a><use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="-8" y="-24" height="15" width="15.0" class="key shifted glyph mdi:bluetooth-connect"/>
 </g>
 <g transform="translate(140, 91)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1715,8 +1716,8 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#ENTHIUM">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">ENTHIUM</tspan></text>
+<a href="#Enthium">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">Enthium</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g class="combo combopos-0">
