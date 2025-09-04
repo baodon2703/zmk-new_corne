@@ -55,43 +55,9 @@
 
 #include "behaviors/combos.dtsi"
 
-/* Default Code For Mouse */
-// &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
-// &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
-
-// &msc {
-//     acceleration-exponent = <1>;      // 0
-//     time-to-max-speed-ms = <100>;       // 300
-//     delay-ms = <0>;                   // 0
-// };
-
-// &mmv {
-//     time-to-max-speed-ms = <500>;
-//     acceleration-exponent = <1>;
-//     trigger-period-ms = <16>;
-// };
-
 /*  --------------  */
 /*    Custom Keys   */
 /*  --------------  */ 
-
-// Custom HRM: Mod: Shift | Tap: DOT | Shifted: Colon
-ZMK_MOD_MORPH(ls_dot_colon,
-    bindings = <&hml LSHFT PERIOD>, <&kp COLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// Custom HRM: Mod: GUI | Tap: QNS | Shifted: EXCL
-ZMK_MOD_MORPH(lg_qns_excl,
-    bindings = <&hml LGUI QMARK>, <&kp EXCL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_MOD_MORPH(lc_rvs_quote,
-    bindings = <&hml LCTL SQT>, <&kp DQT>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
 
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)                            \
   ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
