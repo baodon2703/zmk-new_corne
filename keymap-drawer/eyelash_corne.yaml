@@ -32,8 +32,8 @@ layers:
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - '&hml LCTL SQT'
   - {t: '-', h: Alt, s: _}
-  - {t: '&hml LGUI QMARK', s: '!'}
-  - {t: '&hml LSHFT PERIOD', s: ':'}
+  - '&lg_qns_excl'
+  - '&ls_dot_colon'
   - {t: '@', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
