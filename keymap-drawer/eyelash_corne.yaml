@@ -30,18 +30,18 @@ layers:
   - S
   - F
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - '&hml LCTL SQT'
+  - {t: '''', h: LCTL, s: '"'}
   - {t: '-', h: Alt, s: _}
-  - '&lg_qns_excl'
-  - '&ls_dot_colon'
+  - {t: '?', h: LGUI, s: '!'}
+  - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '@', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
   - J
-  - '&hmr RSHFT M'
-  - '&hmr RGUI G'
-  - '&hmr RALT B'
-  - '&hmr RCTRL V'
+  - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: G, h: RGUI}
+  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: NUM Word, h: Numbers}
   - $$mdi:keyboard-space$$
