@@ -100,7 +100,7 @@ ZMK_TAP_DANCE(undo_redo, bindings = <&undo>, <&redo>;
       LT JT RT                                                                \
       LM JM RM                                                                \
       LB JB RB                                                                \
-      LH    RH                                                               \
+      LH    RH                                                                \
   )
 
 ZMK_BASE_LAYER(Enthium,
