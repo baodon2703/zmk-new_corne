@@ -17,8 +17,8 @@ _This is a work in progress zmk config_
     - I realized the Magic key is not for me yet, and it also intefere with my CamelCase typing. Probably I missed something here.
   - Shifted actions that make sense: , ↦ ;, . ↦ : and ? ↦ !
   - Simpler Devicetree syntax using helper macros from zmk-helpers
-- Tri-state swapper (Cmd Tab) with up/down/left/right arrow keys on the NAV layer
-- 
+- Tri-state swapper for windows swapping with up/down/left/right arrow keys on the NAV layer
+- One hand operations on the left side for right hand mouse usage
 - Nice!View Customization
   - Left: [kevinpastor's nice-view-elemental](https://github.com/kevinpastor/nice-view-elemental)
   - Right: [GPeye's hammerbeam-slideshow](https://github.com/GPeye/hammerbeam-slideshow)
