@@ -43,7 +43,7 @@ layers:
   - {t: B, h: '$$mdi:apple-keyboard-option$$'}
   - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: NUM Word, h: Numbers}
+  - {t: NUM Word, h: '2'}
   - $$mdi:keyboard-space$$
   - {t: NAV Hold, h: '1'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Numbers:
+  '2':
   - {t: '$$mdi:transfer$$', type: trans}
   - Close App
   - Close Window
@@ -262,10 +262,10 @@ combos:
   l: [Enthium]
 - p: [23, 24]
   k: (
-  l: [Enthium, Numbers]
+  l: [Enthium, '2']
 - p: [24, 25]
   k: )
-  l: [Enthium, Numbers]
+  l: [Enthium, '2']
 - p: [37, 38]
   k: {t: '[', s: '{'}
   l: [Enthium]
