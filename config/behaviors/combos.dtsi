@@ -59,8 +59,8 @@ ZMK_COMBO(cb_lbkt,       &kp LBKT,     RB1 RB2,      DEFAULT)
 ZMK_COMBO(cb_rbkt,       &kp RBKT,     RB2 RB3,      DEFAULT) 
 
 // Backspace
-ZMK_COMBO(cb_bksp,       &kp BSPC,     RT1 RT2,        ALL)
-ZMK_COMBO(cb_del,        &kp DEL,      RT2 RT3,       ALL)
+ZMK_COMBO(cb_bksp,       &kp BSPC,     RT2 RT3,        ALL)
+ZMK_COMBO(cb_del,        &kp DEL,      RT3 RT4,       ALL)
 
 // Enter
 ZMK_COMBO(cb_enter,      &kp ENTER,    RM3 RM4,      ALL)
