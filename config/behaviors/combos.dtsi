@@ -49,6 +49,9 @@ ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT,       COMBO_TERM_F
 /*    Right Hand    */
 /*  --------------  */
 
+// Smart mouse
+ZMK_COMBO(mouse,         &smart_mouse, RB4 RB5,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
 // Left Para (
 ZMK_COMBO(cb_lpar,       &kp LPAR,     RM1 RM2,      DEFAULT NUM,   COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 // Right Para )
@@ -59,8 +62,8 @@ ZMK_COMBO(cb_lbkt,       &kp LBKT,     RB1 RB2,      DEFAULT,       COMBO_TERM_F
 ZMK_COMBO(cb_rbkt,       &kp RBKT,     RB2 RB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
 // Backspace
-ZMK_COMBO(cb_bksp,       &kp BSPC,     RT1 RT2,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(cb_del,        &kp DEL,      RT2 RT3,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_bksp,       &kp BSPC,     RT2 RT3,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_del,        &kp DEL,      RT3 RT4,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Enter
 ZMK_COMBO(cb_enter,      &kp ENTER,    RM3 RM4,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
