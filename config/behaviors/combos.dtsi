@@ -42,7 +42,7 @@ ZMK_COMBO(cb_ss_mac,     &ss_mc_zone,  LM5 LB5,      DEFAULT)
 /*     Left Hand    */
 /*  --------------  */
 // Tab 
-ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT) 
+ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
 
 /*  --------------  */
@@ -50,17 +50,17 @@ ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT)
 /*  --------------  */
 
 // Left Para (
-ZMK_COMBO(cb_lpar,       &kp LPAR,     RM1 RM2,      DEFAULT NUM) 
+ZMK_COMBO(cb_lpar,       &kp LPAR,     RM1 RM2,      DEFAULT NUM,   COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 // Right Para )
-ZMK_COMBO(cb_rpar,       &kp RPAR,     RM2 RM3,      DEFAULT NUM) 
+ZMK_COMBO(cb_rpar,       &kp RPAR,     RM2 RM3,      DEFAULT NUM,   COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 // Left Bracket [
-ZMK_COMBO(cb_lbkt,       &kp LBKT,     RB1 RB2,      DEFAULT) 
+ZMK_COMBO(cb_lbkt,       &kp LBKT,     RB1 RB2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 // Right Bracket ]
-ZMK_COMBO(cb_rbkt,       &kp RBKT,     RB2 RB3,      DEFAULT) 
+ZMK_COMBO(cb_rbkt,       &kp RBKT,     RB2 RB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
 // Backspace
-ZMK_COMBO(cb_bksp,       &kp BSPC,     RT2 RT3,        ALL)
-ZMK_COMBO(cb_del,        &kp DEL,      RT3 RT4,       ALL)
+ZMK_COMBO(cb_bksp,       &kp BSPC,     RT1 RT2,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_del,        &kp DEL,      RT2 RT3,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Enter
-ZMK_COMBO(cb_enter,      &kp ENTER,    RM3 RM4,      ALL)
+ZMK_COMBO(cb_enter,      &kp ENTER,    RM3 RM4,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
