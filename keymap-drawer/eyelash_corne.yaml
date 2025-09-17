@@ -272,9 +272,9 @@ combos:
 - p: [38, 39]
   k: {t: ']', s: '}'}
   l: [Enthium]
-- p: [9, 10]
+- p: [8, 9]
   k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [10, 11]
+- p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
 - p: [25, 26]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
