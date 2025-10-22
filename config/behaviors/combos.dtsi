@@ -43,6 +43,33 @@ ZMK_COMBO(cb_ss_mac,     &ss_mc_zone,  LM5 LB5,      DEFAULT)
 /*  --------------  */
 // Tab 
 ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
+// Escape
+ZMK_COMBO(cb_esc,        &kp ESC,      LM2 LM1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Left hand curly braces { }
+ZMK_COMBO(cb_lbrc,       &kp LBRC,     LM1 LM2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_rbrc,       &kp RBRC,     LM2 LM3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Left hand angle brackets < >
+ZMK_COMBO(cb_lt,         &kp LT,       LB1 LB2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_gt,         &kp GT,       LB2 LB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Quotes
+ZMK_COMBO(cb_dqt,        &kp DQT,      LT3 LT4,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_grave,      &kp GRAVE,    LT2 LT3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Common symbols
+ZMK_COMBO(cb_excl,       &kp EXCL,     LT4 LT5,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_at,         &kp AT,       LT1 LT2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_hash,       &kp HASH,     LT0 LT1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_dollar,     &kp DLLR,     LM2 LM3 LM4,  DEFAULT,       COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(cb_bslh,       &kp BSLH,     LB3 LB4,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Clipboard operations
+ZMK_COMBO(cb_select_all, &kp LC(A),    LB4 LB5,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_cut,        &kp LC(X),    LB2 LB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_copy,       &kp LC(C),    LB1 LB2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_paste,      &kp LC(V),    LB0 LB1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 
 /*  --------------  */
@@ -61,9 +88,31 @@ ZMK_COMBO(cb_lbkt,       &kp LBKT,     RB1 RB2,      DEFAULT,       COMBO_TERM_F
 // Right Bracket ]
 ZMK_COMBO(cb_rbkt,       &kp RBKT,     RB2 RB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
+// Programming symbols
+ZMK_COMBO(cb_under,      &kp UNDER,    RM1 RM3,      DEFAULT NUM,   COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_equal,      &kp EQUAL,    RB1 RB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_pipe,       &kp PIPE,     RT1 RT2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_amps,       &kp AMPS,     RM0 RM1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Quotes
+ZMK_COMBO(cb_sqt,        &kp SQT,      RT3 RT4,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_tilde,      &kp TILDE,    RT0 RT1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Punctuation
+ZMK_COMBO(cb_colon,      &kp COLON,    RB3 RB4,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_qmark,      &kp QMARK,    RT4 RT5,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
 // Backspace
 ZMK_COMBO(cb_bksp,       &kp BSPC,     RT2 RT3,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cb_del,        &kp DEL,      RT3 RT4,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Enter
 ZMK_COMBO(cb_enter,      &kp ENTER,    RM3 RM4,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+
+/*  --------------  */
+/*   Both Hands     */
+/*  --------------  */
+
+// Caps Word (for typing CONSTANT_NAMES)
+ZMK_COMBO(cb_capsword,   &caps_word,   LM3 RM3,      DEFAULT,       COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
