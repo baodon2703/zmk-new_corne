@@ -16,3 +16,8 @@
 #define SMART_NAV &smart_nav NAV NAV
 ZMK_HOLD_TAP(smart_nav, bindings = <&mo>, <&nav_word>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
+// Tap: space  | Hold: LCTL.
+#define SMART_SPACE &smart_space LCTL SPACE
+ZMK_HOLD_TAP(smart_space, bindings = <&kp>, <&kp>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
