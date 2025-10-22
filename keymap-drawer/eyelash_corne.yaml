@@ -1,54 +1,54 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  Enthium:
+  ColemakDH:
   - $$mdi:keyboard-esc$$
-  - Z
-  - Y
-  - U
-  - O
-  - Super Copy
-  - $$mdi:volume-high$$
   - Q
-  - L
-  - D
-  - P
-  - X
-  - Undo Redo
   - W
-  - C
-  - I
-  - E
-  - A
-  - {t: ',', s: ;}
+  - F
+  - P
+  - B
+  - $$mdi:volume-high$$
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, s: ':'}
+  - Undo Redo
+  - $$mdi:keyboard-tab$$
+  - {t: A, h: LCTL}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: LGUI}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
-  - K
-  - H
-  - T
-  - N
-  - S
-  - F
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: RGUI}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '''', h: LCTL, s: '"'}
-  - {t: '-', h: Alt, s: _}
-  - {t: '?', h: LGUI, s: '!'}
-  - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: ':'}
-  - {t: '@', s: '#'}
+  - Z
+  - X
+  - C
+  - D
+  - V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
-  - J
-  - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: RGUI}
-  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-control$$'}
+  - K
+  - H
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: NUM Word, h: Num}
   - $$mdi:keyboard-space$$
   - {t: NAV Hold, h: Nav}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
-  - R
   - {t: Symbols, h: Symbols}
+  - '&smart_mouse'
   Nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&w_qtl'
@@ -194,8 +194,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -293,37 +293,37 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Enthium, h: toggle}
+  - {t: ColemakDH, h: toggle}
 combos:
 - p: [44, 45]
   k: '&soft_off'
 - p: [12, 27, 41]
   k: {t: Functions, h: toggle}
-  l: [Enthium]
+  l: [ColemakDH]
 - p: [14, 29]
   k: Screenshot
-  l: [Enthium]
+  l: [ColemakDH]
 - p: [13, 28]
   k: Screenshot
-  l: [Enthium]
+  l: [ColemakDH]
 - p: [15, 16]
   k: $$mdi:keyboard-tab$$
-  l: [Enthium]
+  l: [ColemakDH]
 - p: [40, 41]
   k: '&smart_mouse'
-  l: [Enthium]
+  l: [ColemakDH]
 - p: [23, 24]
   k: (
-  l: [Enthium, Num]
+  l: [ColemakDH, Num]
 - p: [24, 25]
   k: )
-  l: [Enthium, Num]
+  l: [ColemakDH, Num]
 - p: [37, 38]
   k: {t: '[', s: '{'}
-  l: [Enthium]
+  l: [ColemakDH]
 - p: [38, 39]
   k: {t: ']', s: '}'}
-  l: [Enthium]
+  l: [ColemakDH]
 - p: [9, 10]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [10, 11]
