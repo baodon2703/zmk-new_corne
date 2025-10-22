@@ -59,3 +59,7 @@ ZMK_MACRO(save_file,              bindings = <&kp LC(S)>;)
 ZMK_MACRO(refresh,                bindings = <&kp LC(R)>;)
 ZMK_MACRO(select_nxt_word,        bindings = <&kp LC(D)>;)
 ZMK_MACRO(quick_cmd_tab,          bindings = <&kp LC(TAB)>;)
+
+
+// Sticky modifier combinations - Meh key (GUI + Shift + Alt)
+ZMK_MACRO(sticky_meh, bindings = <&sk LGUI>, <&sk LSHFT>, <&sk LALT>;)
