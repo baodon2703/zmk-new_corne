@@ -324,27 +324,6 @@ combos:
 - p: [31, 30]
   k: '>'
   l: [ColemakDH]
-- p: [2, 1]
-  k: '"'
-  l: [ColemakDH]
-- p: [3, 2]
-  k: {t: '`', s: '~'}
-  l: [ColemakDH]
-- p: [1, 0]
-  k: '!'
-  l: [ColemakDH]
-- p: [4, 3]
-  k: '@'
-  l: [ColemakDH]
-- p: [5, 4]
-  k: '#'
-  l: [ColemakDH]
-- p: [16, 15, 14]
-  k: $
-  l: [ColemakDH]
-- p: [30, 29]
-  k: {t: \, s: '|'}
-  l: [ColemakDH]
 - p: [29, 28]
   k: Ctl+A
   l: [ColemakDH]
@@ -372,36 +351,9 @@ combos:
 - p: [38, 39]
   k: {t: ']', s: '}'}
   l: [ColemakDH]
-- p: [23, 25]
-  k: _
-  l: [ColemakDH, Num]
-- p: [37, 39]
-  k: {t: '=', s: +}
-  l: [ColemakDH]
-- p: [8, 9]
-  k: '|'
-  l: [ColemakDH]
-- p: [22, 23]
-  k: '&'
-  l: [ColemakDH]
-- p: [10, 11]
-  k: {t: '''', s: '"'}
-  l: [ColemakDH]
-- p: [7, 8]
-  k: '~'
-  l: [ColemakDH]
-- p: [39, 40]
-  k: ':'
-  l: [ColemakDH]
-- p: [11, 12]
-  k: '?'
-  l: [ColemakDH]
 - p: [9, 10]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [10, 11]
   k: $$mdi:backspace-reverse-outline$$
 - p: [25, 26]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [15, 25]
-  k: $$mdi:alpha-w-box$$
-  l: [ColemakDH]
