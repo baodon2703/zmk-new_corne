@@ -17,6 +17,11 @@
 ZMK_HOLD_TAP(smart_nav, bindings = <&mo>, <&nav_word>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
+// Tap: Sticky Meh (GUI+Shift+Alt)  | Hold: nav-layer.
+#define MEH_NAV &meh_nav NAV 0
+ZMK_HOLD_TAP(meh_nav, bindings = <&mo>, <&sticky_meh>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
 // Tap: space  | Hold: LCTL.
 #define SMART_SPACE &smart_space LCTL SPACE
 ZMK_HOLD_TAP(smart_space, bindings = <&kp>, <&kp>; flavor = "balanced";
