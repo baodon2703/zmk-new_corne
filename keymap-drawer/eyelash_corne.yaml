@@ -48,14 +48,14 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: LCTL}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - {t: Symbols, h: Symbols}
-  - '&smart_mouse'
+  - {t: Omarchy, h: Omarchy}
   Nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Q
+  - W
+  - F
+  - P
+  - B
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
   - END
@@ -64,11 +64,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
+  - R
+  - S
+  - T
+  - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -79,11 +79,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&swapper'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Z
+  - X
+  - C
+  - D
+  - V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Zoom Out
@@ -294,6 +294,55 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ColemakDH, h: toggle}
+  Omarchy:
+  - '&om_ws1'
+  - '&om_ws2'
+  - '&om_ws3'
+  - '&om_ws4'
+  - '&om_ws_next'
+  - '&om_ws_prev'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&om_mv_ws1'
+  - '&om_mv_ws2'
+  - '&om_mv_ws3'
+  - '&om_mv_ws4'
+  - '&om_fullscreen'
+  - '&om_full_width'
+  - '&om_focus_left'
+  - '&om_focus_down'
+  - '&om_focus_up'
+  - '&om_focus_right'
+  - '&om_close_win'
+  - '&om_ws_former'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&om_focus_left'
+  - '&om_focus_down'
+  - '&om_focus_up'
+  - '&om_focus_right'
+  - '&om_toggle_tile'
+  - '&om_grouping'
+  - '&om_swap_left'
+  - '&om_swap_down'
+  - '&om_swap_up'
+  - '&om_swap_right'
+  - Gui+$$mdi:keyboard-space$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&om_grow_left'
+  - '&om_grow_bottom'
+  - '&om_grow_top'
+  - '&om_grow_right'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ColemakDH, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
 combos:
 - p: [44, 45]
   k: '&soft_off'
