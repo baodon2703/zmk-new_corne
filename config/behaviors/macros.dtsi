@@ -8,7 +8,7 @@ ZMK_MACRO(zoom_in,  bindings = <&kp LC(EQUAL)>;)
 ZMK_MACRO(zoom_reset,  bindings = <&kp LC(N0)>;)
 
 // Screenshots
-ZMK_MACRO(ss_zone, bindings = <&kp LC(LS(N2))>;) 
+ZMK_MACRO(ss_zone, bindings = <&kp LC(LS(N3))>;) 
 ZMK_MACRO(ss_mc_zone, bindings = <&kp LC(LS(N4))>;)
 
 // Undo Redo
