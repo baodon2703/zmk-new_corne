@@ -1,28 +1,30 @@
-# Jon's Eyelash Corne ZMK Configurations
-_This is a work in progress zmk config_
+# Eyelash Corne ZMK Configurations
+Base on jonathanle67/zmk-new_corne config but for ColemakDh 
 
 ## My Eyelash Corne Build
 - Left: 3x6
 - Right: 3x6
 - 3 thumb keys each side
-- Joystick on the right hand side
+- No joystick/ roller
 
 ## Highlights
-- [sunaku's Enthium v10 Layout](https://github.com/sunaku/enthium)
 - Designed for typing on MacOS
 - Heavily based on [urob's zmk-config](https://github.com/urob/zmk-config)
   - [urob's "Timeless" homerow mods](https://github.com/urob/zmk-config/tree/main?tab=readme-ov-file#timeless-homerow-mods)
   - Auto-toggle off numbers and navigation layers
   - Shift thumb as Sticky-shift/Capsword/Shift
-    - I realized the Magic key is not for me yet, and it also intefere with my CamelCase typing. Probably I missed something here.
-  - Shifted actions that make sense: , ↦ ;, . ↦ : and ? ↦ !
   - Simpler Devicetree syntax using helper macros from zmk-helpers
 - Tri-state swapper for windows swapping with up/down/left/right arrow keys on the NAV layer
 - One hand operations on the left side for right hand mouse usage
-- Nice!View Customization
-  - Left: [kevinpastor's nice-view-elemental](https://github.com/kevinpastor/nice-view-elemental)
-  - Right: [GPeye's hammerbeam-slideshow](https://github.com/GPeye/hammerbeam-slideshow)
 
+## Note
+- ColemakDh layer: home row mod with some useful combo
+- Navigation layer: Right hand for similar to vim. Left hand can to update with zmk studio for MEH key to quickly switch tab
+- Num layer: numpad with some useful function
+- Symbol layer: dedicate symbol layer with most use key on homerow
+- Mouse layer: combine mouse with Function key in case I need it
+- Window layer: will manual config with zmk studio for linux hyprland
+- Qwerty: for gaming
 
 ## Keymap Diagram
 
