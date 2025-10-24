@@ -28,7 +28,7 @@
 
 // Turn off the device
 &soft_off { hold-time-ms = <2000>; };
-ZMK_COMBO(cb_soft_off,   &soft_off,    LH0 RH0,      ALL) 
+ZMK_COMBO(cb_soft_off,   &soft_off,    LH0 RH0,      DEFAULT) 
 
 // Activate FUNC layer
 ZMK_COMBO(cb_to_func,    &to FUNC,     RT5 RM5 RB5,   DEFAULT) 
@@ -46,7 +46,7 @@ ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT,       COMBO_TERM_F
 // Escape
 ZMK_COMBO(cb_esc,        &kp ESC,      LM2 LM1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // Enter
-ZMK_COMBO(cb_enter,      &kp ENTER,    LM4 LM3,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_enter,      &kp ENTER,    LM4 LM3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /*  --------------  */
 /*    Right Hand    */
@@ -61,9 +61,9 @@ ZMK_COMBO(cb_lbrc,       &kp LBRC,     RT1 RT2,      DEFAULT,       COMBO_TERM_F
 ZMK_COMBO(cb_rbrc,       &kp RBRC,     RT2 RT3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
 // Left Para (
-ZMK_COMBO(cb_lpar,       &kp LPAR,     RM1 RM2,      DEFAULT NUM,   COMBO_TERM_FAST, COMBO_IDLE_FAST) 
+ZMK_COMBO(cb_lpar,       &kp LPAR,     RM1 RM2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 // Right Para )
-ZMK_COMBO(cb_rpar,       &kp RPAR,     RM2 RM3,      DEFAULT NUM,   COMBO_TERM_FAST, COMBO_IDLE_FAST) 
+ZMK_COMBO(cb_rpar,       &kp RPAR,     RM2 RM3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
 // Left Bracket [
 ZMK_COMBO(cb_lbkt,       &kp LBKT,     RM0 RM1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
