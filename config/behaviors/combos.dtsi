@@ -45,20 +45,15 @@ ZMK_COMBO(cb_ss_mac,     &ss_mc_zone,  LM5 LB5,      DEFAULT)
 ZMK_COMBO(cb_tab,        &kp TAB,      LM3 LM2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 // Escape
 ZMK_COMBO(cb_esc,        &kp ESC,      LM2 LM1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Clipboard operations
-// ZMK_COMBO(cb_select_all, &kp LC(A),    LB4 LB5,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
-// ZMK_COMBO(cb_cut,        &kp LC(X),    LB2 LB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
-// ZMK_COMBO(cb_copy,       &kp LC(C),    LB1 LB2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
-// ZMK_COMBO(cb_paste,      &kp LC(V),    LB0 LB1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
+// Enter
+ZMK_COMBO(cb_enter,      &kp ENTER,    LM4 LM3,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /*  --------------  */
 /*    Right Hand    */
 /*  --------------  */
 
 // Smart mouse
-ZMK_COMBO(mouse,         &smart_mouse, RB4 RB5,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(mouse,         &smart_mouse, RT0 RT1,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Left Brace {
 ZMK_COMBO(cb_lbrc,       &kp LBRC,     RT1 RT2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST) 
@@ -78,9 +73,3 @@ ZMK_COMBO(cb_rbkt,       &kp RBKT,     RB0 RB1,      DEFAULT,       COMBO_TERM_F
 // Angle brackets < >
 ZMK_COMBO(cb_lt,         &kp LT,       RB1 RB2,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cb_gt,         &kp GT,       RB2 RB3,      DEFAULT,       COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Backspace
-ZMK_COMBO(cb_del,        &kp DEL,      RT3 RT4,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Enter
-ZMK_COMBO(cb_enter,      &kp ENTER,    RM3 RM4,      ALL,           COMBO_TERM_FAST, COMBO_IDLE_FAST)
