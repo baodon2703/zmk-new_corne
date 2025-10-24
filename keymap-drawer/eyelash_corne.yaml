@@ -12,7 +12,7 @@ layers:
   - L
   - {t: U, h: Sft+Alt+LGUI}
   - Y
-  - {t: ;, s: ':'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - Undo Redo
   - $$mdi:keyboard-tab$$
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
@@ -42,13 +42,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-option$$
   - {t: NUM Word, h: Num}
   - {t: NAV Hold, h: Nav}
   - {t: '$$mdi:keyboard-space$$', h: LCTL}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - {t: Symbols, h: Symbols}
-  - {t: Omarchy, h: Omarchy}
+  - {t: Window, h: Window}
   Nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Q
@@ -61,7 +61,7 @@ layers:
   - END
   - PG UP
   - PG DN
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
@@ -89,7 +89,7 @@ layers:
   - Zoom Out
   - Zoom In
   - Zoom Reset
-  - '&next_desk'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -110,7 +110,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - $
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -142,7 +142,7 @@ layers:
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Nav
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - KP 0
@@ -190,31 +190,31 @@ layers:
   - '>'
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Qwerty, h: toggle}
+  - Functions
+  - {t: Mouse, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
+  - F12
+  - F7
+  - F8
+  - F9
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ColemakDH, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F11
+  - F4
+  - F5
+  - F6
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -226,25 +226,25 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   Functions:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
@@ -258,7 +258,7 @@ layers:
   - RGB BRI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ColemakDH, h: toggle}
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -289,60 +289,109 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  Window:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - $$mdi:volume-high$$
+  - J
+  - L
+  - U
+  - Y
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ColemakDH, h: toggle}
-  Omarchy:
-  - '&om_ws1'
-  - '&om_ws2'
-  - '&om_ws3'
-  - '&om_ws4'
-  - '&om_ws_next'
-  - '&om_ws_prev'
+  - $$mdi:keyboard-tab$$
+  - A
+  - R
+  - S
+  - T
+  - G
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - M
+  - N
+  - E
+  - I
+  - O
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-option$$
+  - Z
+  - X
+  - C
+  - D
+  - V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&om_mv_ws1'
-  - '&om_mv_ws2'
-  - '&om_mv_ws3'
-  - '&om_mv_ws4'
-  - '&om_fullscreen'
-  - '&om_full_width'
-  - '&om_focus_left'
-  - '&om_focus_down'
-  - '&om_focus_up'
-  - '&om_focus_right'
-  - '&om_close_win'
-  - '&om_ws_former'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&om_focus_left'
-  - '&om_focus_down'
-  - '&om_focus_up'
-  - '&om_focus_right'
-  - '&om_toggle_tile'
-  - '&om_grouping'
-  - '&om_swap_left'
-  - '&om_swap_down'
-  - '&om_swap_up'
-  - '&om_swap_right'
-  - Gui+$$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&om_grow_left'
-  - '&om_grow_bottom'
-  - '&om_grow_top'
-  - '&om_grow_right'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ColemakDH, h: toggle}
+  - $$mdi:volume-low$$
+  - K
+  - H
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
+  Qwerty:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:volume-high$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ColemakDH, h: toggle}
+  - $$mdi:keyboard-tab$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-low$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
 combos:
 - p: [44, 45]
   k: '&soft_off'
@@ -361,7 +410,9 @@ combos:
 - p: [16, 17]
   k: $$mdi:keyboard-esc$$
   l: [ColemakDH]
-- p: [40, 41]
+- p: [14, 15]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [7, 8]
   k: '&smart_mouse'
   l: [ColemakDH]
 - p: [8, 9]
@@ -388,7 +439,3 @@ combos:
 - p: [38, 39]
   k: '>'
   l: [ColemakDH]
-- p: [10, 11]
-  k: $$mdi:backspace-reverse-outline$$
-- p: [25, 26]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
